@@ -9,6 +9,9 @@ header {
   width:100%
 }
 
+section {
+  padding: 18px
+}
 html {
   background: url(images/phone-test-2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
