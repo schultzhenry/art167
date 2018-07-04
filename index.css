@@ -1,13 +1,26 @@
-#header {
+header {
   position:fixed;
   margin:auto;
   background-color:white;
   text-align:center;
   top:0px;
+  left: 0;
   height:72px;
   width:100%
 }
 
-#phone-test {
-  width:100%
+html {
+  background: url(images/phone-test-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
 }
