@@ -1,0 +1,12 @@
+div.thumbnail {
+  display:inline-block;
+  width:290px;
+}
+
+img {
+  width:272px;
+}
+
+a {
+  text-decoration:none;
+}
