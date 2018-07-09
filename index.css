@@ -67,14 +67,25 @@ footer {
   font-weight: 500;
 }
 
-a:link {color: white;text-decoration: none;}
-a:visited {color: white;text-decoration: none;}
+/* LINKS */
+a:link {
+  color: white;
+  text-decoration: none;
+  cursor:inherit;
+}
+
+/* VISITED LINKS */
+a:visited {
+  color: white;
+  text-decoration: none;
+  cursor:inherit;
+}
 
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
     border-style: none;
-    border-bottom: 5px solid white;
+    border-bottom: 6px solid white;
     color: white;
     font-size: 30px;
     font-weight: 500;
@@ -101,8 +112,25 @@ a:visited {color: white;text-decoration: none;}
     width: 100%;
 }
 
-.dropdown-content a {font-family: 'Kadwa', serif;
-background-color:#2A20F1;color: white;padding:6px 16px;text-decoration:none;display:block;text-align:right;font-weight:500;}
-.dropdown-content a:hover {color: white;}
-.dropdown:hover .dropdown-content {letter-spacing:0.04em;font-weight:200;font-size:16px;display: block;}
-.dropdown:hover .dropbtn {border-color: #2A20F1;}
+html {
+  cursor: url("cursors/cursor1.png"), auto;
+  shape-rendering: optimizeQuality;
+}
+
+.dropdown-content a {
+  color: white;
+  cursor:inherit;
+  font-family: 'Kadwa', serif;
+  background-color: #F53600;
+  padding:6px 16px;
+  text-decoration:none;
+  display:block;
+  text-align:right;
+  font-weight:500;
+  font-size: 16px;
+  letter-spacing:0.04em;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {cursor:inherit;border-color: #F53600;}
