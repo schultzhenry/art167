@@ -18,8 +18,6 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-section {padding: 18px;text-align:center}
-
 #buttonSection {
   position: fixed;
   top: 50%;
@@ -27,6 +25,8 @@ section {padding: 18px;text-align:center}
   margin-top: -50px;
   margin-left: -100px;
   float: left;
+  padding: 18px;
+  text-align:center;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -76,7 +76,7 @@ a:visited {color: white;text-decoration: none;}
     border-style: none;
     border-bottom: 5px solid white;
     color: white;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -88,20 +88,21 @@ a:visited {color: white;text-decoration: none;}
 .dropdown {
     position: relative;
     display: inline-block;
-    color: OrangeRed;
+    color: black;
     padding: 6px;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: relative;
+    background-color: white;
+    min-width: 76px;
     z-index: 1;
+    width: 100%;
 }
 
-.dropdown-content a {color: red;padding: 12px 16px;text-decoration: none;display: block;}
-.dropdown-content a:hover {background-color: white;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {border-color: red;}
+.dropdown-content a {font-family: 'Kadwa', serif;
+background-color:#2A20F1;color: white;padding:6px 16px;text-decoration:none;display:block;text-align:right;font-weight:500;}
+.dropdown-content a:hover {color: white;}
+.dropdown:hover .dropdown-content {letter-spacing:0.04em;font-weight:200;font-size:16px;display: block;}
+.dropdown:hover .dropbtn {border-color: #2A20F1;}
