@@ -1,4 +1,4 @@
-html {font-family: 'Expletus Sans', cursive;}
+html {font-family: 'Expletus Sans', cursive;background-color:black;}
 
 header {
   position: fixed;
@@ -43,12 +43,15 @@ section {padding: 18px;text-align:center}
   margin-left: auto;
   margin-right: auto;
   align: center;
+  filter: invert(65%);
 }
 
 #toggleButton {
   position: fixed;
-  bottom: 46px;
-  left: 46px;
+  bottom: 42px;
+  left: 42px;
+  font-size:24px;
+  font-weight:700;
 }
 
 footer {
