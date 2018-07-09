@@ -1,6 +1,4 @@
-html {
-  font-family: 'Ubuntu', sans-serif;
-}
+html {font-family: 'Expletus Sans', cursive;}
 
 header {
   position: fixed;
@@ -14,22 +12,40 @@ header {
 
 h1 {
   color: white;
-  font-size: 36px;
+  font-size: 42px;
   text-align: center;
   vertical-align: center;
+  letter-spacing: 0.04em;
 }
+
 section {
   padding: 18px;
   text-align:center
 }
 
+#buttonSection {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  float: left;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+#backgroundVideo {
+  position: fixed;
+  vertical-align: center;
+  margin: auto;
+  left: -96px;
+  right: -96px;
+  top: -96px;
+  bottom: -96px;
+  min-width: 100%;
+  min-height: 116%;
+  margin-left: auto;
+  margin-right: auto;
+  align: center;
 }
 
 footer {
@@ -40,36 +56,35 @@ footer {
   font-size: 20px;
   left: 0;
   position: fixed;
-  text-align:center
+  text-align: center;
+  font-family: inherit;
+  font-weight: 500;
 }
 
-/* unvisited link */
-a:link {
-    color: white;
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-    color: white;
-    text-decoration: none;
-}
+a:link {color: white;text-decoration: none;}
+a:visited {color: white;text-decoration: none;}
 
 /* Dropdown Button */
 .dropbtn {
     background-color: transparent;
-    border-style: solid;
-    border-width: medium;
-    border-color: red;
+    border-style: none;
+    border-bottom: 5px solid white;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-family: inherit;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    color: OrangeRed;
+    padding: 6px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -91,10 +106,12 @@ a:visited {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: white;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  border-color: red;
+}

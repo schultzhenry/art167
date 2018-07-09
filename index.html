@@ -4,16 +4,17 @@
     <meta charset="utf-8"/>
     <title>Natalie's class website</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
   </head>
   <body>
-    <video autoplay muted loop id="myVideo">
-      <source src="index-backgrounds/crystals1.mp4" type="video/mp4">
-    </video>
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="index-backgrounds/crystals1.mp4" type="video/mp4"></video>
     <header id="header">
       <h1>NSH INTERACTIVE</h1>
     </header>
-    <section style="top:108px;position:relative">
+    <section id="buttonSection">
       <div class="dropdown">
         <button class="dropbtn">Weekly Projects</button>
         <div class="dropdown-content">
@@ -34,12 +35,18 @@
           <a href="exercises/hello-world.html">Hello world</a>
         </div>
       </div>
-      <button class="dropbtn" href="about.html">About</button>
+      <div class="dropdown">
+        <button type="button" class="dropbtn" href="about.html">About</button>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="dropbtn"><a href="done.html">Exit</a></button>
+      </div>
+    </div>
     </section>
     <footer>
       <div id="webring">
         <a href="https://candacechung.github.io/summer2018-yale/" class="previous">⟵</a>
-        <a href="http://summer2018-yale.matt-wolff.com/people" class="home">HOME</a>
+        <a href="http://summer2018-yale.matt-wolff.com/people" class="home"> HOME </a>
         <a href="https://miajackson.github.io/summer2018-interactive/" class="next">⟶</a>
       </div>
     </footer>
