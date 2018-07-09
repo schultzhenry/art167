@@ -48,8 +48,8 @@ section {padding: 18px;text-align:center}
 
 #toggleButton {
   position: fixed;
-  bottom: 42px;
-  left: 42px;
+  bottom: 38px;
+  left: 38px;
   font-size:24px;
   font-weight:700;
 }
