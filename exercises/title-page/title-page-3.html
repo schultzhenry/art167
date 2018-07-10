@@ -3,26 +3,48 @@
   <head>
       <title>Title Page in HTML</title>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="styles/title-page-3.css" />
+      <link rel="stylesheet" href="styles/title-page-2.css" />
   </head>
   <body>
-    <h2>PROVOKING</h2>
-    <h1>MAGIC</h1>
-    <h3>LIGHTING OF</h3>
-    <h2>INGO MAURER</h2>
+    <div id="top-marquee">
+      <marquee behavior="alternate" bgcolor="red" height="360px">
+        <img src="smithsonian-white.svg" width="96px"/>
+        <marquee behavior="alternate" bgcolor="pink" height="360px">
+          <img src="smithsonian.svg" width="96px"/>
+          <marquee behavior="alternate" bgcolor="red" height="360px">
+            <img src="smithsonian-white.svg" width="96px"/>
+            <marquee behavior="alternate" bgcolor="black" height="360px">
+              <img src="smithsonian-white.svg" width="96px"/>
+              <marquee behavior="alternate" bgcolor="black" height="360px"></marquee>
+            </marquee>
+          </marquee>
+        </marquee>
+      </marquee>
+    </div>
+    <div align="center" id="full-title">
+      <span><font size="7"><pre><b>PROVOKING MAGIC:<br />LIGHTING OF INGO MAURER</b></pre></font></span>
+    </div>
+    <div align="center" id="contributors">
+      <span><pre>Kim Hastreiter/Julie V. Iovine/Claude Maurer/Ingo Maurer</pre></span>
+    </div>
+    <div align="center" id="publisher">
+      <span><pre>Smithsonian <i>Cooper-Hewitt, National Design Museum</i></pre></span>
+    </div>
+    <div align="center" id="page-links">
+      <font size="3">
+        <pre><a href="title-page-1.html">1</a> <a>2</a> <a href="title-page-3.html">3</a> <a href="title-page-4.html">4</a> <a href="title-page-5.html">5</a> <a href="title-page-6.html">6</a> <a href="title-page-7.html">7</a> <a href="title-page-8.html">8</a> <a href="title-page-9.html">9</a> <a href="title-page-10.html">10</a></pre>
+      </font>
+    </div>
+    <div>
+      <br />
+      <br />
+    </div>
+    <div id="bottom-marquee">
+      <marquee behavior="alternate" bgcolor="red" height="360px">
+        <img src="smithsonian-white.svg" width="360px"/>
+      </marquee>
+    </div>
     <br />
-    <p>
-      Kim Hastreiter   Julie V. Iovine   Claude Maurer   Ingo Maurer
-    </p>
-    <br />
-    <br />
-    <img src="smithsonian.svg" width="32px"/>
-    <p>
-      Smithsonian
-    </p>
-    <p>
-      <i>Cooper-Hewitt, National Design Museum</i>
-    </p>
-  </body>
 
+  </body>
 </html>
