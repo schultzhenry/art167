@@ -1,6 +1,7 @@
 body {
   background-color: red;
   text-align: center;
+  font-family: "Bell Gothic";
 }
 
 .bookTitle {
@@ -8,31 +9,46 @@ body {
   padding: 0;
   line-height: 0.2em;
   color: white;
-  text-shadow: 0 0 30px white, 0 0 10px white;
+  letter-spacing: -0.02em;
 }
 
 #Provoking {
-
+  font-size: 96px;
+  font-family: "Bell Gothic";
+  text-shadow: 0 0 23px white, 0 0 20px white;
 }
 
 #Magic {
-  font-size: 128px;
-  text-shadow: 0 0 46px white, 0 0 18px white;
+  font-size: 183px;
+  padding-top:22px;
+  line-height:0px;
+  text-shadow: 0 0 26px white, 0 0 24px white;
+  font-family: "Bell Gothic";
+  letter-spacing: -0.06em;
 }
 
 #LightingOf {
-  font-size: 42px;
+  padding-top: 0px;
+  font-size: 64px;
+  text-shadow: 0 0 18px white, 0 0 18px white;
 }
 
 #IngoMaurer {
-  font-size: 62px;
+  padding-top: 16px;
+  font-size: 80px;
+  text-shadow: 0 0 22px white, 0 0 18px white;
 }
 
 #Contributors {
   padding: 3pt;
+  align: center;
 }
 
 .contributor {
   padding: 6px;
-  font-size:18.5px;
+  font-size:20.5px;
+}
+
+a {
+  color:black;
 }
