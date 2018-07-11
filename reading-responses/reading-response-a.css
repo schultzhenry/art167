@@ -1,0 +1,46 @@
+.A mark {
+  background-color: red;
+}
+
+.B mark {
+  background-color: blue;
+}
+
+.C mark {
+  background-color: green;
+}
+
+p {
+  padding: 0px;
+  font-size: 21px;
+}
+
+mark {
+  font-size: 21px;
+  line-height:1.6em;
+  color: white;
+  padding:0.2em;
+  padding-left:0.6em;
+  padding-right:0.6em;
+}
+pre {
+  position: relative;
+}
+
+#text-container {
+  width:700px;
+}
+
+#response-container {
+  width:700px;
+}
+
+div {
+  display: inline;
+  float: left;
+  padding: 0px;
+}
+
+a {
+  color: black;
+}
