@@ -6,7 +6,7 @@
 #plainbulb {
   padding:35%;
   padding-top:40%;
-  padding-bottom:100%;
+  padding-bottom:80%;
   background-color: black;
   width: 30%;
   stroke: white;
@@ -47,8 +47,34 @@
   top:112px;
 }
 #page-links {
-  top: 182px;
+  top: 196px;
 }
 a {
-  color: black;
+  color: DimGrey;
+}
+
+.mouseover-preventor {
+  position: absolute;
+  background-color:transparent;
+}
+
+#top-preventor {
+  top: 0px;
+  left: 0px;
+  height:36%;
+  width:100%;
+}
+
+#left-preventor {
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:35%;
+}
+
+#right-preventor {
+  top: 0px;
+  right: 0px;
+  height:100%;
+  width:35%;
 }

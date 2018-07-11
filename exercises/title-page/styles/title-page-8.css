@@ -1,3 +1,55 @@
 body {
-  background-color: ;
+  background-color: LightBlue;
+}
+
+#full-title {
+  width: 100%;
+  display: inline-block;
+}
+
+#provoking-magic {
+  background-color: transparent;
+  position: absolute;
+  font-family: "Bell Gothic Black", serif;
+  font-size: 180px;
+  bottom: 0;
+  margin: auto;
+  text-align: left;
+  transform:scale(1,2.5);
+  text-shadow: 0 0 18px LightBlue, 0 0 9px LightBlue;
+}
+
+#lighting-of-ingo-maurer {
+  background-color: transparent;
+  position: absolute;
+  font-family: "Bell Gothic Black", serif;
+  font-size: 86px;
+  line-height: 1.95em;
+  bottom: 0;
+  margin: auto;
+  text-align: left;
+  color: red;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 18px red, 0 0 9px black;
+}
+
+#logo-container {
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  right: 56px;
+  bottom: 0;
+}
+
+#contributors {
+  background-color: transparent;
+  position: absolute;
+  font-family: "Bell Gothic Black", serif;
+  font-size: 24px;
+  line-height: 30em;
+  bottom: 0;
+  margin: auto;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 18px LightBlue, 0 0 9px LightBlue;
 }
