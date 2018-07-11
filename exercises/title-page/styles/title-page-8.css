@@ -30,7 +30,7 @@ body {
   text-align: left;
   color: red;
   letter-spacing: 0.05em;
-  text-shadow: 0 0 18px red, 0 0 9px black;
+  text-shadow: 0 0 148px LightBlue, 0 0 136px LightBlue;
 }
 
 #logo-container {
@@ -52,4 +52,9 @@ body {
   text-align: left;
   letter-spacing: 0.05em;
   text-shadow: 0 0 18px LightBlue, 0 0 9px LightBlue;
+}
+
+#page-links {
+  position: absolute;
+  z-index: 1000;
 }
