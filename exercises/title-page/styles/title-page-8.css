@@ -57,4 +57,9 @@ body {
 #page-links {
   position: absolute;
   z-index: 1000;
+  color: red;
+}
+
+a {
+  color: red;
 }
