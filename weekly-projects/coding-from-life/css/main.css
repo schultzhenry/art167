@@ -1,0 +1,244 @@
+/* FRAME */
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: #E79700;
+	position: relative;
+  z-index: 10;
+}
+
+#mat {
+	border-bottom: 300px solid white;
+	border-left: 90px solid transparent;
+	border-right: 60px solid transparent;
+	height: 160px;
+	width: 720px;
+  transform: rotate(-7deg);
+}
+
+#orange-roll {
+  background: OrangeRed;
+  top: 290px;
+  left: 390px;
+  width: 450px;
+  height: 66px;
+  transform: rotate(-35deg);
+}
+
+#soccer-ball {
+  top: 80px;
+  left: 350px;
+	width: 260px;
+	height: 260px;
+	background: LightGrey;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#bottle {
+  background: green;
+  opacity: 0.5;
+  top: 16px;
+  left: 460px;
+  width: 100px;
+  height: 380px;
+}
+
+.jar {
+  top: 160px;
+  left: 260px;
+  width: 120px;
+  height: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid grey;
+  opacity: 0.3;
+	filter:blur(1.2px);
+	box-shadow: 0px 0px 6px white;
+}
+
+#jar-2 {
+  top: 166px;
+}
+
+#jar-3 {
+  top: 172px;
+}
+
+#jar-4 {
+  top: 290px;
+}
+
+#jar-5 {
+  top: 300px;
+}
+
+.jar-line {
+	top: 210px;
+	left: 262px;
+	border: 2px solid grey;
+  opacity: 0.3;
+	height: 106px;
+	width: 0px;
+	filter:blur(1.2px);
+	box-shadow: 0px 0px 8px white, 0px 0px 2px white;
+}
+
+#jar-7 {
+	top: 214px;
+	left: 268px;
+	height: 112px;
+}
+
+#jar-8 {
+	top: 218px;
+	left: 274px;
+	height: 112px;
+}
+
+#jar-9 {
+	top: 221px;
+	left: 280px;
+	height: 112px;
+}
+
+#jar-10 {
+	top: 223px;
+	left: 288px;
+	height: 112px;
+}
+
+#jar-11 {
+	top: 225px;
+	left: 296px;
+	height: 112px;
+}
+
+#jar-12 {
+	top: 227px;
+	left: 305px;
+	height: 112px;
+}
+
+#jar-13 {
+	top: 228px;
+	left: 315px;
+	height: 112px;
+}
+
+#jar-14 {
+	top: 228px;
+	left: 325px;
+	height: 112px;
+}
+
+#jar-15 {
+	top: 227px;
+	left: 334px;
+	height: 112px;
+}
+
+#jar-16 {
+	top: 226px;
+	left: 343px;
+	height: 112px;
+}
+
+#jar-17 {
+	top: 224px;
+	left: 352px;
+	height: 112px;
+}
+
+#jar-18 {
+	top: 222px;
+	left: 361px;
+	height: 112px;
+}
+
+#jar-19 {
+	top: 217px;
+	left: 368px;
+	height: 112px;
+}
+
+#jar-20 {
+	top: 213px;
+	left: 375px;
+	height: 112px;
+}
+
+#jar-21 {
+	top: 208px;
+	left: 380px;
+	height: 112px;
+}
+/* DRAWING ONE */
+
+.object {
+	position: absolute;
+}
+
+#lemon {
+	top: 200px;
+  left: 300px;
+	width: 100px;
+	height: 85px;
+	background: yellow;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#lemon-end {
+	top: 216px;
+  left: 294px;
+	width: 40px;
+	height: 40px;
+	background: yellow;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#red-ball {
+	top: 452px;
+  left: 60px;
+	width: 60px;
+	height: 60px;
+	background: red;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#orange-roll-left {
+	top: 423px;
+	left: 390px;
+	width: 66px;
+	height: 66px;
+	background: white;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid OrangeRed;
+}
+
+#orange-roll-right {
+	top: 164px;
+	left: 763px;
+	width: 66px;
+	height: 66px;
+	background: OrangeRed;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
