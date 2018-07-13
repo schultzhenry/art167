@@ -4,121 +4,131 @@ body, html {
 }
 
 img {
-  width: 100vw;
+  width:100vw;
+  height: auto;
   display: none;
 }
 
-#one {
-	display: block;
+#baby {display: none;}
+#man-1 {display: none;}
+#man-2 {display: none;}
+#man-3 {display: none;}
+#woman-jar-1 {display: none;}
+#woman-jar-2 {display: none;}
+#woman-motion {display: none;}
+#woman-older {display: block;}
+#woman-teeth-1 {display: none;}
+#woman-teeth-2 {display: none;}
+#woman-younger {display: none;}
+
+@media screen and (max-width: 2200px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: block;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: none;}
 }
 
-@media screen and (max-width: 1024px) {
-	#one {
-		display: none;
-	}
-
-	#two {
-		display: block;
-	}
-
-	#three {
-		display: none;
-	}
-
-	#four {
-		display: none;
-	}
-
-	#five {
-		display: none;
-	}
-
+@media screen and (max-width: 1800px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: block;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: none;}
 }
 
-@media screen and (max-width: 768px) {
-	#one {
-		display: none;
-	}
+@media screen and (max-width: 1600px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: block;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: none;}
+}
 
-	#two {
-		display: none;
-	}
+@media screen and (max-width: 1400px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: block;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: none;}
+}
 
-	#three {
-		display: block;
-	}
+@media screen and (max-width: 1200px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: block;}
+  #woman-younger {display: none;}
+}
 
-	#four {
-		display: none;
-	}
+@media screen and (max-width: 1000px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: block;}
+}
 
-	#five {
-		display: none;
-	}
+@media screen and (max-width: 800px) {
+  #baby {display: none;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: block;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: none;}
 }
 
 @media screen and (max-width: 600px) {
-	#one {
-		display: none;
-	}
-
-	#two {
-		display: none;
-	}
-
-	#three {
-		display: none;
-	}
-
-	#four {
-		display: block;
-	}
-
-	#five {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	#one {
-		display: none;
-	}
-
-	#two {
-		display: none;
-	}
-
-	#three {
-		display: none;
-	}
-
-	#four {
-		display: none;
-
-	}
-	#five {
-		display: block;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	#one {
-		display: none;
-	}
-
-	#two {
-		display: none;
-	}
-
-	#three {
-		display: none;
-	}
-
-	#four {
-		display:none;
-	}
-
-	#five {
-		display: none;
-	}
+  #baby {display: block;}
+  #man-1 {display: none;}
+  #man-2 {display: none;}
+  #man-3 {display: none;}
+  #woman-jar-1 {display: none;}
+  #woman-jar-2 {display: none;}
+  #woman-motion {display: none;}
+  #woman-older {display: none;}
+  #woman-teeth-1 {display: none;}
+  #woman-teeth-2 {display: none;}
+  #woman-younger {display: none;}
 }

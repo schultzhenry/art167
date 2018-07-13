@@ -1,4 +1,22 @@
-html {font-family: 'Expletus Sans', cursive;background-color:black;}
+html {
+  font-family: 'Expletus Sans', sans-serif;
+  cursor: url("cursors/cursor1.png"), auto;
+  shape-rendering: optimizeQuality;
+}
+
+#backgroundVideo {
+  position: fixed;
+  vertical-align: center;
+  margin: auto;
+  left: -10vw;
+  right: -10vw;
+  top: -10vh;
+  bottom: -10vh;
+  min-width: 100%;
+  min-height: 116%;
+  align: center;
+  filter: invert(70%);
+}
 
 header {
   position: fixed;
@@ -13,6 +31,7 @@ header {
 .header-letter {
   position: relative;
 }
+
 .header-letter:hover {
   color: transparent
   transform:rotate(180deg);
@@ -27,32 +46,12 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-#buttonSection {
+#menu {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
   float: left;
-  padding: 18px;
-  text-align:center;
-}
-
-/* Style the video: 100% width and height to cover the entire window */
-#backgroundVideo {
-  position: fixed;
-  vertical-align: center;
-  margin: auto;
-  left: -96px;
-  right: -96px;
-  top: -96px;
-  bottom: -96px;
-  min-width: 100%;
-  min-height: 116%;
-  margin-left: auto;
-  margin-right: auto;
-  align: center;
-  filter: invert(70%);
+  text-align: center;
 }
 
 #toggleButton {
@@ -76,68 +75,63 @@ footer {
   font-weight: 500;
 }
 
-/* LINKS */
 a:link {
   color: white;
   text-decoration: none;
   cursor:inherit;
 }
 
-/* VISITED LINKS */
 a:visited {
   color: white;
   text-decoration: none;
   cursor:inherit;
 }
 
-/* Dropdown Button */
+/* Menu dropdown containers */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px;
+}
+
+/* Menu dropdown buttons and link buttons */
 .dropbtn, .btn {
     background-color: transparent;
     border-style: none;
     border-bottom: 6px solid white;
     color: white;
+    font-family: inherit;
     font-size: 30px;
     font-weight: 500;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 2px;
-    padding-left: 2px;
-    font-family: inherit;
+    padding: 0px 0px 4px 4px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    color: black;
-    padding: 6px;
-}
-
+/* Menu dropdown contents */
 .dropdown-content {
     display: none;
     position: relative;
-    background-color: white;
-    min-width: 76px;
-    z-index: 1;
     width: 100%;
-}
-
-html {
-  cursor: url("cursors/cursor1.png"), auto;
-  shape-rendering: optimizeQuality;
+    z-index: 1;
 }
 
 .dropdown-content a {
+  display: block;
   color: white;
-  cursor:inherit;
+  cursor: inherit;
   font-family: 'Kadwa', serif;
   background-color: #F53600;
   padding:6px 16px;
-  text-decoration:none;
-  display:block;
-  text-align:right;
+  text-decoration: none;
+  text-align: right;
   font-weight:500;
   font-size: 16px;
-  letter-spacing:0.04em;
+  letter-spacing: 0.04em;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+  background-color: red;
 }
 
 .dropdown:hover .dropdown-content {

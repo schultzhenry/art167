@@ -1,3 +1,7 @@
+html {
+  font-family: Courier, monospace;
+}
+
 .A mark {
   background-color: red;
 }
@@ -12,27 +16,54 @@
 
 p {
   padding: 0px;
-  font-size: 21px;
+  font-size: 16px;
+  margin: 0.2em;
 }
 
+span {
+  line-height:1.6em;
+}
 mark {
-  font-size: 21px;
+  font-size: 14px;
   line-height:1.6em;
   color: white;
   padding:0.2em;
   padding-left:0.6em;
-  padding-right:0.6em;
-}
-pre {
-  position: relative;
 }
 
-#text-container {
-  width:700px;
+#text-container, #response-container {
+  width: 580px;
 }
 
-#response-container {
-  width:700px;
+@media screen and (max-width: 1180px) {
+  #text-container {
+    width: 50%;
+  }
+  #response-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #text-container {
+    padding-bottom: 1em;
+    width: 530px;
+  }
+  #response-container {
+    padding-bottom: 1em;
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #text-container {
+    padding-bottom: 1em;
+    width: 100%;
+  }
+  #response-container {
+    padding-bottom: 1em;
+    width: 100%;
+  }
 }
 
 div {
@@ -42,5 +73,11 @@ div {
 }
 
 a {
-  color: black;
+  background-color: red;
+  color: white;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }

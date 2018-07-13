@@ -2,69 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Reading response A</title>
+    <title>NSH | Reading Response A</title>
     <link rel="stylesheet" href="reading-response-a.css" />
   </head>
   <body>
-    <div id="text-container">
-      <h1><a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/#the-time-you-attended-the-e-mail-address-validation-meeting">Reading response A</a></h1>
-      <p class="A"><mark>“Let’s just start with e-mail validation.”</mark></p>
-      <p class="B"><mark>“Can you define valid?”</mark></p>
-      <p class="C"><mark>“A well-formed—”</mark></p>
-      <p class="B"><mark>—well-formed via a regular expssion test?</mark></p>
-      <p class="C"><mark>—or well-formed according to RFC 5321 and RFC 5322?</mark></p>
-      <p class="A"><mark>Let’s assume a library, OK?</mark></p>
-      <p class="B"><mark>Do we send everyone who submits a form a confirmation message?</mark></p>
-      <p class="C"><mark>We should, right?</mark></p>
-      <p class="A"><mark>Is it in the spec?</mark></p>
-      <p class="B"><mark>No.</mark></p>
-      <p class="C"><mark>Then we shouldn’t do it.</mark></p>
-      <p class="A"><mark>Well, wait, maybe we should update the spec.</mark></p>
-      <p class="B"><mark>It’s best practice.</mark></p>
-      <p class="C"><mark>Can I say what worries me?</mark></p>
-      <p class="A"><mark>Wait–capture that. We need to check on confirmations.</mark></p>
-      <p class="B"><mark>Got it.</mark></p>
-      <p class="C"><mark>What really, really worries me are “temporary” e-mail services, right? Like Mailinator.com, which allows you to give out “disposable” e-mail addresses.</mark></p>
-      <p class="A"><mark>So don’t let anyone enter a Mailinator address.</mark></p>
-      <p class="B"><mark>[Typing.]</mark></p>
-      <p class="C"><mark>Right, but Mailinator.com doesn’t have just one address. It has, like, 300.</mark></p>
-      <p class="A"><mark>So get a list.</mark></p>
-      <p class="B"><mark>There’s no list actually. You have to go and reload the Mailinator page and make a list and cross your fingers.</mark></p>
-      <p class="C"><mark>Yeah, we looked at this. There’s no list.</mark></p>
-      <p class="A"><mark>Can we not rathole on Mailinator before we talk overall security?</mark></p>
-      <p class="B"><mark>I mean, if we’re counting on the library validation, is that good enough? No one is going to enter a 500-page e-mail.</mark></p>
-      <p class="C"><mark>Russians will.</mark></p>
-      <p class="A"><mark>Very possibly.</mark></p>
-      <p class="B"><mark>But we can set upload limits, right?</mark></p>
-      <p class="C"><mark>Sort of, but we also allow people to upload large images for their profiles–up to 2 megabytes.</mark></p>
-      <p class="A"><mark>So?</mark></p>
-      <p class="B"><mark>No, he’s right. Those all come as a lump, so someone could enter a 500-page-long e-mail, and we need to check it.</mark></p>
-      <p class="C"><mark>I’ll take that if you want, because it’s going to relate to the overall database schema.</mark></p>
-      <p class="A"><mark>Can we catch it at the database?</mark></p>
-      <p class="C"><mark>That’s why I’ll take it.</mark></p>
-      <p class="A"><mark>Someone take a picture of the whiteboard?</mark></p>
-      <p class="B"><mark>Sure.</mark></p>
-      <p class="C"><mark>And we should talk about account expiration?</mark></p>
-      <p class="A"><mark>Is that in the spec?</mark></p>
-      <p class="B"><mark>No, but it’s a dependency for the password-expiration admin tool.</mark></p>
-      <p class="A"><mark>Who owns that?</mark</p>
+    <div id="big-container">
+      <div id="text-container">
+        <p class="A"><mark>“Let’s just start with e-mail validation.”<br /></mark></p>
+        <p class="B"><mark>“Can you define valid?”<br /></mark></p>
+        <p class="C"><mark>“A well-formed—”<br /></mark></p>
+        <p class="B"><mark>—well-formed via a regular expssion test?<br /></mark></p>
+        <p class="C"><mark>—or well-formed according to RFC 5321 and RFC 5322?<br /></mark></p>
+        <p class="A"><mark>Let’s assume a library, OK?<br /></mark></p>
+        <p class="B"><mark>Do we send everyone who submits a form a confirmation message?<br /></mark></p>
+        <p class="C"><mark>We should, right?<br /></mark></p>
+        <p class="A"><mark>Is it in the spec?<br /></mark></p>
+        <p class="B"><mark>No.<br /></mark></p>
+        <p class="C"><mark>Then we shouldn’t do it.<br /></mark></p>
+        <p class="A"><mark>Well, wait, maybe we should update the spec.<br /></mark></p>
+        <p class="B"><mark>It’s best practice.<br /></mark></p>
+        <p class="C"><mark>Can I say what worries me?<br /></mark></p>
+        <p class="A"><mark>Wait–capture that. We need to check on confirmations.<br /></mark></p>
+        <p class="B"><mark>Got it.<br /></mark></p>
+        <p class="C"><mark>What really, really worries me are “temporary” e-mail services, right? Like Mailinator.com, which allows you to give out “disposable” e-mail addresses.<br /></mark></p>
+        <p class="A"><mark>So don’t let anyone enter a Mailinator address.<br /></mark></p>
+        <p class="B"><mark>[Typing.]<br /></mark></p>
+        <p class="C"><mark>Right, but Mailinator.com doesn’t have just one address. It has, like, 300.<br /></mark></p>
+        <p class="A"><mark>So get a list.<br /></mark></p>
+        <p class="B"><mark>There’s no list actually. You have to go and reload the Mailinator page and make a list and cross your fingers.<br /></mark></p>
+        <p class="C"><mark>Yeah, we looked at this. There’s no list.<br /></mark></p>
+        <p class="A"><mark>Can we not rathole on Mailinator before we talk overall security?<br /></mark></p>
+        <p class="B"><mark>I mean, if we’re counting on the library validation, is that good enough? No one is going to enter a 500-page e-mail.<br /></mark></p>
+        <p class="C"><mark>Russians will.<br /></mark></p>
+        <p class="A"><mark>Very possibly.<br /></mark></p>
+        <p class="B"><mark>But we can set upload limits, right?<br /></mark></p>
+        <p class="C"><mark>Sort of, but we also allow people to upload large images for their profiles–up to 2 megabytes.<br /></mark></p>
+        <p class="A"><mark>So?<br /></mark></p>
+        <p class="B"><mark>No, he’s right. Those all come as a lump, so someone could enter a 500-page-long e-mail, and we need to check it.<br /></mark></p>
+        <p class="C"><mark>I’ll take that if you want, because it’s going to relate to the overall database schema.<br /></mark></p>
+        <p class="A"><mark>Can we catch it at the database?<br /></mark></p>
+        <p class="C"><mark>That’s why I’ll take it.<br /></mark></p>
+        <p class="A"><mark>Someone take a picture of the whiteboard?<br /></mark></p>
+        <p class="B"><mark>Sure.<br /></mark></p>
+        <p class="C"><mark>And we should talk about account expiration?<br /></mark></p>
+        <p class="A"><mark>Is that in the spec?<br /></mark></p>
+        <p class="B"><mark>No, but it’s a dependency for the password-expiration admin tool.<br /></mark></p>
+        <p class="A"><mark>Who owns that?<br /></mark></p>
+      </div>
+      <div id="response-container">
+        <p>
+          This bit resonated with me because it speaks to the problem
+          of how to work in an efficient, organized manner. It's an
+          example of the way programmers could spend forever thinking
+          about how best to optimize a feature, but this time spent on
+          developing methods can end up slowing down the development
+          of the feature itself. Which work is efficient? It's a
+          balance problem: time spent strategizing vs. coding. But
+          how do you quantify the value of the time you've spent
+          brainstorming, thinking of potential edge cases...? I
+          would argue this time spent can yield the most interesting
+          work, but it seems in reality the push from management to
+          'ship' often overrides the programmers' desire to 'rathole'
+          on the various aspects of the features they're developing.
+        </p>
+        <br />
+        <span>Written in response to Paul Ford's <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is Code?</a></span>
+        <br />
+        <br />
+        <a href="../index.html">Back</a>
+      </div>
     </div>
-    <div id="response-container">
-      <p>
-This bit resonated with me because it speaks to the problem of how to work in an efficient, organized manner.
-Which work is efficient? Is there a better
-It's an example of the way programmers could spend forever thinking about how best to optimize a feature,
-but this time spent on developing methods can end up slowing down the development of the feature itself.
-It's a balance problem: time spent on strategizing vs. optimization itself.
-But how do you quantify the value of the time you've spent brainstorming, thinking of potential edge cases...?
-I would argue this time spent can yield the most interesting work,
-but it seems in reality the push from management to "ship" often overrides the programmers' desire to "rathole"
-on the various aspects of the features they're developing.
-<br /><br />
-
-<a href="../index.html">Back</a>
-      </p>
-    </div>
-
   </body>
 </html>

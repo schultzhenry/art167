@@ -4,11 +4,13 @@
 }
 
 #plainbulb {
-  padding:35%;
-  padding-top:40%;
-  padding-bottom:80%;
+  position: fixed;
+  padding:35vw;
+  padding-top:60vh;
+  padding-bottom:20%;
   background-color: black;
-  width: 30%;
+  height: 30vh;
+  width: 30vw;
   stroke: white;
   transition:background-color 1s ease;
 }
@@ -21,17 +23,12 @@
   transition:background-color 8s ease;
 }
 
-#page-links {
-  color: white;
-}
-
 #full-title {
   line-height:3.6em;
 }
 
 #full-title, #contributors, #publisher, #page-links, #rest-of-title {
   position: fixed;
-  left: 36px;
 }
 #full-title {
   top: 12px;
@@ -46,11 +43,10 @@
 #rest-of-title {
   top:112px;
 }
-#page-links {
+#page-links, a {
   top: 196px;
-}
-a {
-  color: DimGrey;
+  font-family: monospace;
+  color: white;
 }
 
 .mouseover-preventor {
