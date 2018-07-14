@@ -223,13 +223,12 @@ body {
 #orange-roll-left {
 	top: 423px;
 	left: 390px;
-	width: 66px;
-	height: 66px;
+	width: 68px;
+	height: 68px;
 	background: white;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
-	border: 1px solid OrangeRed;
 }
 
 #orange-roll-right {
