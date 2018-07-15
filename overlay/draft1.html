@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Draft Overlay Concept</title>
+    <link rel="stylesheet" href="draft1.css" />
+    <style>
+      span {
+        padding: 0px;
+        margin: 0px;
+        font-family: monospace;
+        font-size: 18px;
+      }
+      div.out {
+        width: 40%;
+        height: 120px;
+        margin: 0 15px;
+        background-color: #d6edfc;
+        float: left;
+      }
+      div.in {
+        width: 60%;
+        height: 60%;
+        background-color: #fc0;
+        margin: 10px auto;
+      }
+      p {
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <p>
+      <span class="H">H</span><span class="e">e</span><span class="l">l</span><span class="l">l</span><span class="o">o</span><span class="space">&#32;</span><span class="w">w</span><span class="o">o</span><span class="r">r</span><span class="l">l</span><span class="d">d</span><span class="!">!</span>
+    </p>
+    <div class="out enterleave">
+      <span>move your mouse</span>
+      <div class="in">
+      </div>
+    </div>
+
+    <script>
+      $( "span.H" )
+        .mouseenter(function() {
+          $( this ).find( "span" ).text ( &#x2813; )
+        })
+      var n = 0;
+      $( "div.enterleave" )
+        .mouseenter(function() {
+          n += 1;
+          $( this ).find( "span" ).text( "mouse enter x " + n );
+        })
+        .mouseleave(function() {
+          $( this ).find( "span" ).text( "mouse leave" );
+        });
+    </script>
+  </body>
+</html>

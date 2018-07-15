@@ -1,17 +1,6 @@
 html {
   font-family: Courier, monospace;
-}
-
-.A mark {
-  background-color: red;
-}
-
-.B mark {
-  background-color: blue;
-}
-
-.C mark {
-  background-color: green;
+  display: inline-block;
 }
 
 p {
@@ -19,50 +8,50 @@ p {
   font-size: 16px;
   margin: 0.2em;
   line-height:1.4em;
-}
-
-span {
-  line-height:2em;
+  color: black;
 }
 
 mark {
   font-size: 14px;
   line-height:1.6em;
-  color: white;
   padding:0.25em;
   padding-left:0.6em;
 }
 
-#text-container, #response-container {
+.big-container {
+  display: block;
+}
+
+.quote-container, .response-container {
   width: 580px;
 }
 
 @media screen and (max-width: 1180px) {
-  #text-container {
+  .quote-container {
     width: 50%;
   }
-  #response-container {
+  .response-container {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 1080px) {
-  #text-container {
+  .quote-container {
     padding-bottom: 1em;
     width: 530px;
   }
-  #response-container {
+  .response-container {
     padding-bottom: 1em;
     width: 530px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #text-container {
+  .quote-container {
     padding-bottom: 1em;
     width: 100%;
   }
-  #response-container {
+  .response-container {
     padding-bottom: 1em;
     width: 100%;
   }
@@ -71,7 +60,8 @@ mark {
 div {
   display: inline;
   float: left;
-  padding: 0px;
+  padding-bottom: 16px;
+  padding-right: 16px;
 }
 
 a {
@@ -82,4 +72,8 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+#reading-response-info {
+  font-style: italic;
 }
