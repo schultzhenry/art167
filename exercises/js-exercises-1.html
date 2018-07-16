@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>JS Exercise 1</title>
+   <meta charset="utf-8">
+ </head>
+
+ <body>
+   <h1>Content</h1>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function() {
+      console.log("Hello jQuery");
+      $('h1').css('padding', '1em');
+      $('h1').css('font-family', 'monospace');
+      $('h1').css('background', 'AliceBlue');
+      $('body').css('background', 'blue');
+
+      $('h1').click(function() {
+        $('body').css('background', 'red');
+      });
+
+      #('h1').hover(function () {
+        
+      });
+    });
+
+   </script>
+ </body>
+</html>
