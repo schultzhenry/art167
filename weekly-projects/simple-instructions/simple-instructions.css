@@ -1,0 +1,38 @@
+html {
+  background-color: AliceBlue;
+}
+
+body {
+  margin: 2vh;
+}
+
+img {
+  display: block;
+  margin: auto;
+  height: 90vh;
+  outline: dotted 5px blue;
+}
+
+.back-button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 2em;
+}
+
+a {
+  font-family: sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 1em;
+  color: black;
+}
+
+a:hover {
+  background-color: white;
+  outline: dotted 5px blue;
+}
+
+a:visited {
+  color: black;
+}
