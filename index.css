@@ -120,7 +120,7 @@ a:visited {
   color: white;
   cursor: inherit;
   font-family: 'Kadwa', serif;
-  background-color: #F53600;
+  background-color: black;
   padding:6px 16px;
   text-decoration: none;
   text-align: right;
@@ -131,7 +131,6 @@ a:visited {
 
 .dropdown-item:hover {
   text-decoration: underline;
-  background-color: red;
 }
 
 .dropdown:hover .dropdown-content {
@@ -146,11 +145,11 @@ a:visited {
 
 .dropdown:hover .btn {
   cursor:inherit;
-  border-bottom: 6px solid #F53600;
+  border-bottom: 6px solid black;
 }
 
 .previous:hover, .home:hover, .next:hover {
-  color: #F53600;
+  color: black;
 }
 
 button:focus {
