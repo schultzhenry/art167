@@ -1,5 +1,5 @@
 html {
-  background-color: AliceBlue;
+  background-color: LightGrey;
 }
 
 body {
@@ -8,16 +8,18 @@ body {
 
 img {
   display: block;
-  margin: auto;
   height: 90vh;
-  outline: dotted 5px blue;
+  outline: dotted 4px black;
+  margin: auto;
 }
 
 .back-button {
   display: block;
   margin: auto;
-  text-align: center;
+  padding-top: 4em;
   padding: 2em;
+  padding-left: 0em;
+  text-align: center;
 }
 
 a {
@@ -26,13 +28,23 @@ a {
   text-decoration: none;
   padding: 1em;
   color: black;
+  outline: dotted 4px white;
 }
 
 a:hover {
   background-color: white;
-  outline: dotted 5px blue;
+  outline: dotted 4px black;
 }
 
 a:visited {
   color: black;
+}
+
+@media screen and (max-height: 560px) {
+  img {
+    display: block;
+    height: 504px;
+    width: auto;
+    outline: dotted 4px black;
+  }
 }
