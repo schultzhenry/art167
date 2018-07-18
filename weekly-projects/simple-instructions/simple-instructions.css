@@ -6,10 +6,17 @@ body {
   margin: 2vh;
 }
 
-img {
+.drawing {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 50vh;
+}
+
+#instructions {
   display: block;
-  height: 90vh;
-  outline: dotted 4px black;
+  width: 720px;
+  outline: dashed 2px black;
   margin: auto;
 }
 
@@ -28,23 +35,17 @@ a {
   text-decoration: none;
   padding: 1em;
   color: black;
-  outline: dotted 4px white;
+  outline: dashed 2px white;
 }
 
 a:hover {
   background-color: white;
-  outline: dotted 4px black;
+  outline: dashed 2px black;
+  transition-timing-function: ease-in;
+  transition: background-color 0.5s, outline 0.5s;
+  transition-delay: outline 0.5s;
 }
 
 a:visited {
   color: black;
-}
-
-@media screen and (max-height: 560px) {
-  img {
-    display: block;
-    height: 504px;
-    width: auto;
-    outline: dotted 4px black;
-  }
 }
