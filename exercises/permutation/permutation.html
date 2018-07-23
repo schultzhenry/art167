@@ -14,6 +14,9 @@
     text-align: center;
     margin-top: 6px;
   }
+  pre {
+    background-color: white;
+  }
 
   </style>
 </head>
@@ -24,7 +27,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	$(document).ready(function() {
-		var delay = 3500 //Delay in milliseconds
+		var delay = 3000 //Delay in milliseconds
 
 		// Arrays
     // Emojis from http://getemoji.com/
@@ -36,7 +39,7 @@
                          "💍", "👞", "🔥", "🌏", "🦐", "🐛", "🐌",
                          "🐓", "🐍", "🥚", "🌶", "🍰", "🎪", "⌛️",
                          "⏳", "🔒", "🔓", "🔑", "🖊", "📦", "💊",
-                         "🔪", "🚬", "⚰️", "🕳"]
+                         "🔪", "🚬", "⚰️", "🕳" ]
 
 		// HTML Elements
 		var textContainer = $('#text'); // jQuery
@@ -52,11 +55,15 @@
     function updateItem() {
       i = Math.floor(Math.random() * myArray.length);
       myArray[i] = choose()
-      var text = myArray[0] + " : " + myArray[1] + " :: " + myArray[2] + " : " + myArray[3]
+      var text = myArray[0] + " : "
+      text += myArray[1] + " :: "
+      text += myArray[2] + " : "
+      text += myArray[3]
       return text
     }
 		// Execute randomizer functions with delay
 		setInterval(function() {
+      textContainer.text("")
       textContainer.text(updateItem())
 		}, delay);
 
