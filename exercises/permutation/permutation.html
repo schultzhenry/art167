@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Equivalence</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  * {
+    font-family: monospace;
+    font-size: 6vw;
+    padding-top: 4vw;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  </style>
+</head>
+<body>
+
+	<pre id="text"></pre>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		var delay = 3500 //Delay in milliseconds
+
+		// Arrays
+    // Emojis from http://getemoji.com/
+		var myEmojiArray = [ "💀", "💩", "🌂", "👑", "🕶", "👖", "👣",
+                         "👁", "💦", "🍇", "🍼", "🍴", "🧀", "🎱",
+                         "🏆", "🎧", "🏡", "💻", "💡", "🗑", "🎁",
+                         "💬", "🔕", "🛑", "✂️", "🛒", "💰", "⚖️",
+                         "🎾", "📿", "🥒", "☕️", "🔔", "👽", "💼",
+                         "💍", "👞", "🔥", "🌏", "🦐", "🐛", "🐌",
+                         "🐓", "🐍", "🥚", "🌶", "🍰", "🎪", "⌛️",
+                         "⏳", "🔒", "🔓", "🔑", "🖊", "📦", "💊",
+                         "🔪", "🚬", "⚰️", "🕳"]
+
+		// HTML Elements
+		var textContainer = $('#text'); // jQuery
+
+    function choose() {
+      i = Math.floor(Math.random() * myEmojiArray.length);
+      return myEmojiArray[i];
+      console.log("Emoji: " + i)
+    }
+
+    var myArray = [choose(), choose(), choose(), choose()]
+
+    function updateItem() {
+      i = Math.floor(Math.random() * myArray.length);
+      myArray[i] = choose()
+      var text = myArray[0] + " : " + myArray[1] + " :: " + myArray[2] + " : " + myArray[3]
+      return text
+    }
+		// Execute randomizer functions with delay
+		setInterval(function() {
+      textContainer.text(updateItem())
+		}, delay);
+
+	});
+	</script>
+</body>
+</html>
