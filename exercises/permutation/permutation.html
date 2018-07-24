@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Equivalence</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-  * {
-    font-family: monospace;
-    font-size: 6vw;
-    padding-top: 4vw;
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    margin-top: 6px;
-  }
-  pre {
-    background-color: white;
-  }
+	<head>
+		<title>Equivalence</title>
+		<meta name="viewport"/>
+		<meta content="width=device-width, initial-scale=1.0"/>
+	  <style>
+		  * {
+				background-color: white;
+		    font-family: monospace;
+				text-align: center;
+		    font-size: 5vw;
+		    color: black;
+				padding: 0px;
+				-webkit-box-sizing: border-box;
+					 -moz-box-sizing: border-box;
+								box-sizing: border-box;
+		  }
+			div {
+				width: 98vw;
+				padding-top: 6vh;
+				height: 50vh;
+			}
+			a {
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
 
-  </style>
-</head>
-<body>
+	  </style>
+	</head>
+	<body>
+		<!--Contains ideographic spaces (U+3000)-->
+		<div id="equivalence-link">
+			<a href="#">
+				<pre id="text">　 : 　 :: 　 : 　</pre>
+			</a>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
 
-	<pre id="text"></pre>
+			$(document).ready(function() {
+		    // Emojis from http://getemoji.com/
+				var emojis = [ "💀", "💩", "🌂", "👑", "🕶",
+											 "👖", "👣", "👁", "💦", "🍇",
+											 "🍼", "🍴", "🧀", "🎱", "🏆",
+											 "🎧", "🏡", "💻", "💡", "🗑",
+											 "🎁", "💬", "🔕", "🛑", "✂️",
+											 "🛒", "💰", "⚖️", "🎾", "📿",
+											 "🥒", "☕️", "🔔", "👽", "💼",
+		                   "💍", "👞", "🔥", "🌏", "🦐",
+											 "🐛", "🐌", "🐓", "🐍", "🥚",
+											 "🌶", "🍰", "🎪", "⌛️", "⏳",
+											 "🔒", "🔓", "🔑", "🖊", "📦",
+											 "💊", "🔪", "🚬", "⚰️", "🕳",
+											 "👻", "🌈", "🌙", "🎳", "🛶",
+											 "🏰", "🛰", "⚓️", "⏰", "🚪",
+											 "🔭", "🚽", "🕯", "🔍", "🗞",
+											 "♻️", "💯" ]
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-	$(document).ready(function() {
-		var delay = 3000 //Delay in milliseconds
+		    function pick() {
+					range = emojis.length;
+		      i = Math.floor(Math.random() * range);
+		      return emojis[i];
+		    }
 
-		// Arrays
-    // Emojis from http://getemoji.com/
-		var myEmojiArray = [ "💀", "💩", "🌂", "👑", "🕶", "👖", "👣",
-                         "👁", "💦", "🍇", "🍼", "🍴", "🧀", "🎱",
-                         "🏆", "🎧", "🏡", "💻", "💡", "🗑", "🎁",
-                         "💬", "🔕", "🛑", "✂️", "🛒", "💰", "⚖️",
-                         "🎾", "📿", "🥒", "☕️", "🔔", "👽", "💼",
-                         "💍", "👞", "🔥", "🌏", "🦐", "🐛", "🐌",
-                         "🐓", "🐍", "🥚", "🌶", "🍰", "🎪", "⌛️",
-                         "⏳", "🔒", "🔓", "🔑", "🖊", "📦", "💊",
-                         "🔪", "🚬", "⚰️", "🕳" ]
+		    var four = [pick(),pick(),pick(),pick()];
 
-		// HTML Elements
-		var textContainer = $('#text'); // jQuery
+				// Randomly choose an emoji to replace,
+				// calling choose() to determine which
+				// one serves as replacement.
+		    function changeOne() {
+					range = four.length;
+					i = Math.floor(Math.random() * range);
+		      four[i] = pick();
+		      return four[0] + " : " +
+					       four[1] + " :: " +
+								 four[2] + " : " +
+								 four[3]
+		    }
 
-    function choose() {
-      i = Math.floor(Math.random() * myEmojiArray.length);
-      return myEmojiArray[i];
-      console.log("Emoji: " + i)
-    }
+				// Execute randomizer functions with delay
+				setTimeout(function() {
+					$("pre").css("margin-top", "1.055em");
+		      $("#text").text(changeOne())
+					setInterval(function() {
+						$("pre").css("margin-top", "1.055em");
+			      $("#text").text(changeOne())
+					}, 8000);
+				}, 1000);
+			});
 
-    var myArray = [choose(), choose(), choose(), choose()]
-
-    function updateItem() {
-      i = Math.floor(Math.random() * myArray.length);
-      myArray[i] = choose()
-      var text = myArray[0] + " : "
-      text += myArray[1] + " :: "
-      text += myArray[2] + " : "
-      text += myArray[3]
-      return text
-    }
-		// Execute randomizer functions with delay
-		setInterval(function() {
-      textContainer.text("")
-      textContainer.text(updateItem())
-		}, delay);
-
-	});
-	</script>
-</body>
+		</script>
+	</body>
 </html>
