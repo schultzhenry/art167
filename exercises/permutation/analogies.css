@@ -1,0 +1,25 @@
+* {
+  background-color: white;
+  font-family: monospace;
+  text-align: center;
+  font-size: 7vmin;
+  color: black;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#analogies-container {
+  overflow: visible;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 12vh 6vw 12vh 6vw;
+}
+
+p {
+  vertical-align: bottom;
+  display: inline;
+}
