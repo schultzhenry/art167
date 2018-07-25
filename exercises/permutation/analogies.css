@@ -10,6 +10,7 @@
           box-sizing: border-box;
 }
 #analogies-container {
+  background-color: white;
   overflow: visible;
   position: fixed;
   left: 0px;
@@ -20,6 +21,7 @@
 }
 
 p {
+  background-color: white;
   vertical-align: bottom;
   display: inline;
 }

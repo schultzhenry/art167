@@ -10,16 +10,15 @@
 		<!--Contains ideographic spaces (U+3000)-->
 		<div id="analogies-container">
 			<p class="item" id="one">　</p>
-			<p> : </p>
+			<p>:</p>
 			<p class="item" id="two">　</p>
-			<p> :: </p>
+			<p>::</p>
 			<p class="item" id="three">　</p>
-			<p> : </p>
+			<p>:</p>
 			<p class="item" id="four">　</p>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
-
 			$(document).ready(function() {
 		    // Emojis from http://getemoji.com/
 				var emojis = [ "💀", "💩", "🌂", "👑", "🕶",
@@ -50,7 +49,7 @@
 		    }
 
 				var array = ["#one", "#two", "#three", "#four"]
-				var speed = 600;
+				var speed = 400;
 
 				// Execute randomizer functions with delay
 				setTimeout(function() {
@@ -61,16 +60,21 @@
 					$("#four").text(pick());
 					$(".item").fadeTo(speed,1);
 					setInterval(function() {
-						var change = array[randomizer(array.length)];
-						$(change).fadeOut(speed);
+						var c1 = array[randomizer(array.length)];
+						var c2 = array[randomizer(array.length)];
+						var c3 = array[randomizer(array.length)];
+						selectors = c1 + ", " + c2 + ", " + c3
+						$(selectors).fadeTo(speed,0);
 						setTimeout(function() {
-							$(change).text(pick());
+						$(c1).text(pick());
+						$(c2).text(pick());
+						$(c3).text(pick());
 						}, speed);
-						$(change).fadeIn(speed);
+						$('#analogies-container').css("background-color", "white");
+						$(selectors).fadeTo(speed,1);
 					}, (speed * 12));
 				}, speed);
 			});
-
 		</script>
 	</body>
 </html>
