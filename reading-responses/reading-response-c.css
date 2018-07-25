@@ -1,0 +1,79 @@
+html {
+  font-family: Courier, monospace;
+  display: inline-block;
+}
+
+p {
+  padding: 0px;
+  font-size: 16px;
+  margin: 0.2em;
+  line-height:1.4em;
+  color: black;
+}
+
+mark {
+  font-size: 14px;
+  line-height:1.6em;
+  padding:0.25em;
+  padding-left:0.6em;
+}
+
+.big-container {
+  display: block;
+}
+
+.quote-container, .response-container {
+  width: 580px;
+}
+
+@media screen and (max-width: 1180px) {
+  .quote-container {
+    width: 50%;
+  }
+  .response-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .quote-container {
+    padding-bottom: 1em;
+    width: 530px;
+  }
+  .response-container {
+    padding-bottom: 1em;
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .quote-container {
+    padding-bottom: 1em;
+    width: 100%;
+  }
+  .response-container {
+    padding-bottom: 1em;
+    width: 100%;
+  }
+}
+
+div {
+  display: inline;
+  float: left;
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+a {
+  background-color: red;
+  color: white;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#reading-response-info {
+  font-style: italic;
+}
