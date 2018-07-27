@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>testing: bookmarklet</title>
+    <link rel="icon" type="image/png" href="../favicons/red.png">
+  </head>
+  <body>
+    <h1>
+      this is my
+      <a
+        class="anything"
+        href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='bookmarklet.js';})();">
+        bookmarklet
+      </a>
+    </h1>
+    <p id="cursorX"></p>
+    <p id="cursorY"></p>
+  </body>
+</html>
