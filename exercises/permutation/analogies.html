@@ -9,72 +9,15 @@
 	<body>
 		<!--Contains ideographic spaces (U+3000)-->
 		<div id="analogies-container">
-			<p class="item" id="one">　</p>
-			<p>:</p>
-			<p class="item" id="two">　</p>
-			<p>::</p>
-			<p class="item" id="three">　</p>
-			<p>:</p>
-			<p class="item" id="four">　</p>
+			<p class="analogy-item" id="one">　</p>
+			<p class="analogy-item">:</p>
+			<p class="analogy-item" id="two">　</p>
+			<p class="analogy-item">::</p>
+			<p class="analogy-item" id="three">　</p>
+			<p class="analogy-item">:</p>
+			<p class="analogy-item" id="four">　</p>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-		    // Emojis from http://getemoji.com/
-				var emojis = [ "💀", "💩", "🌂", "👑", "🕶",
-											 "👖", "👣", "👁", "💦", "🍇",
-											 "🍼", "🍴", "🧀", "🏆", "🎧",
-											 "🏡", "💻", "💡", "🗑", "🍬",
-											 "🎁", "💬", "🔕", "🛑", "✂️",
-											 "🛒", "💰", "⚖️", "🎾", "📿",
-											 "🥒", "☕️", "🔔", "👽", "💼",
-		                   "💍", "👞", "🔥", "🌏", "🦐",
-											 "🐛", "🐌", "🐓", "🐍", "🥚",
-											 "🌶", "🍰", "🎪", "⌛️", "⏳",
-											 "🔒", "🔓", "🔑", "🖊", "📦",
-											 "💊", "🔪", "🚬", "⚰️", "🕳",
-											 "👻", "🌈", "🌙", "🎳", "🛶",
-											 "🏰", "🛰", "⚓️", "⏰", "🚪",
-											 "🔭", "🚽", "🕯", "🔍", "🗞",
-											 "♻️", "💯" ];
-
-				function randomizer(range) {
-					return Math.round(Math.random() * range);
-				}
-
-		    function pick() {
-					// type = randomizer(lists.length);
-					i = randomizer(emojis.length);
-		      return emojis[i];
-		    }
-
-				var array = ["#one", "#two", "#three", "#four"]
-				var speed = 400;
-
-				// Execute randomizer functions with delay
-				setTimeout(function() {
-					$(".item").fadeTo(0,0);
-					$("#one").text(pick());
-					$("#two").text(pick());
-					$("#three").text(pick());
-					$("#four").text(pick());
-					$(".item").fadeTo(speed,1);
-					setInterval(function() {
-						var c1 = array[randomizer(array.length)];
-						var c2 = array[randomizer(array.length)];
-						var c3 = array[randomizer(array.length)];
-						selectors = c1 + ", " + c2 + ", " + c3
-						$(selectors).fadeTo(speed,0);
-						setTimeout(function() {
-						$(c1).text(pick());
-						$(c2).text(pick());
-						$(c3).text(pick());
-						}, speed);
-						// $('#analogies-container').css("background-color", "white");
-						$(selectors).fadeTo(speed,1);
-					}, (speed * 12));
-				}, speed);
-			});
-		</script>
+		<script src="analogies.js"></script>
 	</body>
 </html>

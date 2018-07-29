@@ -1,0 +1,126 @@
+* {
+  font-family: 'Garamond', serif;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#analogies-container, #menu, #webring {
+  text-align: center;
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#analogies-container {
+  position: fixed;
+  top: 16vmin;
+  overflow: visible;
+  font-size: 3vmin;
+}
+
+.analogy-item {
+  vertical-align: bottom;
+  display: inline;
+  padding: 1vmin 0px 1vmin 0px;
+}
+
+#menu {
+  font-size: 5vmin;
+  position: relative;
+  top: 32vmin;
+  padding-left: 16vw;
+  padding-right: 16vw;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  cursor:inherit;
+}
+
+/* Menu dropdown containers */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 0.3em;
+}
+
+/* Menu dropdown buttons and link buttons */
+.dropbtn, .btn {
+    background-color: transparent;
+    font-family: inherit;
+    border-style: none;
+    font-size: 8vmin;
+    padding: 0px 0px 4px 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  display: block;
+  color: white;
+  background-color: black;
+  padding: 1vmin 1.5vmin;
+  text-decoration: none;
+  text-align: right;
+  font-size: 2.2vmin;
+  letter-spacing: 0.04em;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: all 2s linear;
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  cursor:inherit;
+  border-style: none;
+}
+
+.dropdown:hover .btn {
+  cursor:inherit;
+  border-bottom: 1vmin solid black;
+}
+
+
+button:focus {
+  outline: 0;
+}
+
+#webring {
+  background-color: white;
+  bottom: 0px;
+  padding-bottom: 8vmin;
+  padding-top: 8vmin;
+  font-size: 3vmin;
+  z-index: 1000;
+}
+
+.previous:hover, .home:hover, .next:hover {
+  color: black;
+}
+
+#toggleButton {
+  font-size: 3vmin;
+  position: fixed;
+  bottom: 8vmin;
+  left: 8vmin;
+  z-index: 1001;
+}

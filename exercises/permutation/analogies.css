@@ -9,6 +9,7 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 #analogies-container {
   background-color: white;
   overflow: visible;
@@ -20,7 +21,7 @@
   padding: 20vh 6vw 12vh 6vw;
 }
 
-p {
+.analogy-item {
   background-color: white;
   vertical-align: bottom;
   display: inline;

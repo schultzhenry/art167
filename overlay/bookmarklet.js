@@ -30,6 +30,27 @@
   function initBookmarklet($) {
     (window.bookmarklet = function() {
 
+      $('body').css({
+        "background": "black",
+        "color": "white",
+      });
+
+      $('p').css({
+        'color': 'black'
+      });
+
+      $('p:hover').css({
+        'color': 'yellow',
+        'text-shadow': '0px -3px 2px white'
+      });
+
+      // var all = $("*");
+      //
+      // for (var i=0, max=all.length; i < max; i++) {
+      //   var element = all[i]
+      //   console.log(element.textContent)
+      // }
+
       // Get browser window and height
       w = $(window).width()
       h = $(window).height()
@@ -59,6 +80,7 @@
       var jumbotron = "<div id=\'jumbotron\'></div>";
       var jumbotronFraction = 6;
       var jumbotronStyle = {
+        "border": "1px solid white",
         "z-index": "1000000000",
         "background-color": "black",
         "position": "fixed",
