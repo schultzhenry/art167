@@ -127,6 +127,9 @@ button:focus {
   z-index: 1001;
 }
 
+#toggleButton:hover {
+  cursor: pointer;
+}
 .s:hover {
   color: transparent;
   -webkit-text-stroke: 1px black;
