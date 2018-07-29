@@ -33,9 +33,6 @@ $(document).ready(function() {
       });
       setTimeout(function() {
         toggle = 0;
-        $('.dropdown-item').css({
-          'background-color': 'black';
-        });
       }, 500);
     }
   });
