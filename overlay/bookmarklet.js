@@ -31,8 +31,9 @@
     (window.bookmarklet = function() {
 
       $('body').css({
-        "background": "black",
-        "color": "white",
+        'background': 'black',
+        'color': 'white',
+        'cursor': 'none'
       });
 
       $('p').css({
@@ -61,9 +62,10 @@
         "position": "fixed",
         "top": "0px",
         "left": "0px",
-        "width": "80px",
-        "height": "80px",
-        "background-color": "black",
+        "width": "260px",
+        "height": "260px",
+        "background-color": "LightYellow",
+        "filter": "blur(140px)",
         "border-radius": "50%",
         "z-index": "-1"
       };
@@ -122,8 +124,8 @@
       onmousemove = function(e) {
         // console.log("mouse location:", e.clientX, e.clientY)
         $('#bgBlob').css({
-          "left": String((e.clientX - (80 / 2))) + "px",
-          "top": String((e.clientY - (80 / 2)) + "px")
+          "left": String((e.clientX - (260 / 2))) + "px",
+          "top": String((e.clientY - (260 / 2)) + "px")
         });
         $('#tinyCursor').css({
           "left": String((e.clientX / jumbotronFraction) + 3) + "px",

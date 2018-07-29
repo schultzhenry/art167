@@ -27,7 +27,7 @@
 }
 
 #menu {
-  font-size: 5vmin;
+  font-size: 4vmin;
   position: relative;
   padding-left: 14vw;
   padding-right: 14vw;
@@ -69,14 +69,11 @@ a:link, a:visited {
   padding-top: 1vmin;
   padding-bottom: 1vmin;
   display: block;
-  color: white;
-  background-color: black;
   padding: 1vmin 1.5vmin;
   text-decoration: none;
   text-align: right;
   font-size: 2.5vmin;
   letter-spacing: 0.04em;
-  border: 1px solid black;
 }
 
 .dropdown-item:hover {
@@ -107,7 +104,7 @@ button:focus {
   background-color: white;
   bottom: 0px;
   padding-bottom: 12vmin;
-  padding-top: 8vmin;
+  padding-top: 2vmin;
   font-size: 3vmin;
   z-index: 1000;
 }
