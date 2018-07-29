@@ -28,7 +28,7 @@ $(document).ready(function() {
   }
 
   var array = ["#one", "#two", "#three", "#four"]
-  var speed = 400;
+  var speed = 500;
 
   // Execute randomizer functions with delay
   setTimeout(function() {
@@ -53,6 +53,7 @@ $(document).ready(function() {
       $(c2).text(pick());
       $(c3).text(pick());
       }, speed);
+      $(".analogy-item").css("background-color", "white");
       // $('#analogies-container').css("background-color", "white");
       $(selectors).fadeTo(speed,1);
     }, (speed * 12));
