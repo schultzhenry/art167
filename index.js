@@ -8,7 +8,7 @@ $(document).ready(function() {
       $('body').css({
         'filter': 'invert(100%)',
         'background': 'black',
-        'transition': 'all 2s'
+        'transition': 'all 1s'
       });
       $('a').css({
         'color': 'black',
@@ -16,7 +16,6 @@ $(document).ready(function() {
       });
       setTimeout(function() {
         toggle = 1;
-        console.log('toggle: ' + toggle);
       }, 500);
       setTimeout(function() {
         $('#webring').css({
@@ -30,11 +29,10 @@ $(document).ready(function() {
       $('body').css({
         'filter': 'invert(0%)',
         'background': 'white',
-        'transition': 'all 2s'
+        'transition': 'all 1s'
       });
       setTimeout(function() {
         toggle = 0;
-        console.log(toggle);
       }, 500);
     }
   });
