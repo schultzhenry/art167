@@ -1,132 +1,82 @@
-html {
-  font-family: 'Expletus Sans', sans-serif;
-  cursor: url("cursors/cursor1.png"), auto;
-  shape-rendering: optimizeQuality;
+* {
+  font-family: 'Garamond', serif;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#backgroundVideo {
-  position: fixed;
-  vertical-align: center;
-  margin: auto;
-  left: -10vw;
-  right: -10vw;
-  top: -10vh;
-  bottom: -10vh;
-  min-width: 100%;
-  min-height: 116%;
-  align: center;
-  filter: invert(70%);
-}
-
-header {
-  position: fixed;
-  margin: auto;
+#analogies-container, #menu, #webring {
   text-align: center;
-  top: 0px;
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
   left: 0px;
-  height: 124px;
-  width: 100%;
+  right: 0px;
 }
 
-.header-letter {
-  position: relative;
+#analogies-container {
+  overflow: visible;
+  font-size: 3vmin;
+  top: 16vmin;
 }
 
-.header-letter:hover {
-  color: transparent
-  transform:rotate(180deg);
-  display: inline-block;
-}
-
-h1 {
-  color: white;
-  font-size: 42px;
-  text-align: center;
-  vertical-align: center;
-  letter-spacing: 0.04em;
+.analogy-item {
+  vertical-align: bottom;
+  display: inline;
+  padding: 1vmin 0px 1vmin 0px;
 }
 
 #menu {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  float: left;
-  text-align: center;
+  font-size: 5vmin;
+  position: relative;
+  padding-left: 14vw;
+  padding-right: 14vw;
+  top: 32vmin;
 }
 
-#toggleButton {
-  position: fixed;
-  bottom: 38px;
-  left: 38px;
-  font-size:24px;
-  font-weight:700;
-}
-
-footer {
-  background-color: transparent;
-  width: 100%;
-  height: 72px;
-  bottom: 0;
-  font-size: 24px;
-  left: 0;
-  position: fixed;
-  text-align: center;
-  font-family: inherit;
-  font-weight: 500;
-}
-
-a:link {
-  color: white;
+a:link, a:visited {
+  color: black;
   text-decoration: none;
   cursor:inherit;
 }
 
-a:visited {
-  color: white;
-  text-decoration: none;
-  cursor:inherit;
-}
-
-/* Menu dropdown containers */
 .dropdown {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 6px;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 0.3em;
 }
 
 /* Menu dropdown buttons and link buttons */
 .dropbtn, .btn {
     background-color: transparent;
-    border-style: none;
-    border-bottom: 6px solid white;
-    color: white;
     font-family: inherit;
-    font-size: 30px;
-    font-weight: 500;
+    border-style: none;
+    font-size: 8vmin;
     padding: 0px 0px 4px 4px;
 }
 
-/* Menu dropdown contents */
 .dropdown-content {
-    display: none;
-    position: relative;
-    width: 100%;
-    z-index: 1;
+  display: none;
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
 .dropdown-content a {
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
   display: block;
   color: white;
-  cursor: inherit;
-  font-family: 'Kadwa', serif;
   background-color: black;
-  padding:6px 16px;
+  padding: 1vmin 1.5vmin;
   text-decoration: none;
   text-align: right;
-  font-weight:500;
-  font-size: 16px;
+  font-size: 2.5vmin;
   letter-spacing: 0.04em;
+  border: 1px solid black;
 }
 
 .dropdown-item:hover {
@@ -134,8 +84,8 @@ a:visited {
 }
 
 .dropdown:hover .dropdown-content {
+  transition: all 2s linear;
   display: block;
-  transition: width 2s, height 2s, transform 2s;
 }
 
 .dropdown:hover .dropbtn {
@@ -145,13 +95,94 @@ a:visited {
 
 .dropdown:hover .btn {
   cursor:inherit;
-  border-bottom: 6px solid black;
+  border-bottom: 1vmin solid black;
 }
 
-.previous:hover, .home:hover, .next:hover {
-  color: black;
-}
 
 button:focus {
   outline: 0;
+}
+
+#webring {
+  background-color: white;
+  bottom: 0px;
+  padding-bottom: 8vmin;
+  padding-top: 8vmin;
+  font-size: 3vmin;
+  z-index: 1000;
+}
+
+.previous:hover, .home:hover, .next:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+  cursor: pointer;
+}
+
+#toggleButton {
+  font-size: 3vmin;
+  position: fixed;
+  bottom: 1vmin;
+  width: 100vw;
+  z-index: 1001;
+  margin: auto;
+}
+
+#toggleButton:hover {
+  cursor: pointer;
+}
+.s:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+.s, .r, .b, .s:hover, .r:hover, .b:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.r:hover {
+  color: red;
+}
+
+.b:hover {
+  filter: blur(3px);
+}
+
+.switch {
+  position: fixed;
+  display: inline-block;
+  width: 6vmin;
+  height: 0vmin;
+  border: 1px solid black;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  left: 0.1vmin;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2vmin;
+  width: 2vmin;
+  bottom: -0.1vmin;
+  border: 1px solid black;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(3.5vmin);
+  -ms-transform: translateX(3.5vmin);
+  transform: translateX(3.5vmin);
 }

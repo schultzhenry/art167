@@ -49,12 +49,11 @@ $(document).ready(function() {
       selectors = c1 + ", " + c2 + ", " + c3
       $(selectors).fadeTo(speed,0);
       setTimeout(function() {
-      $(c1).text(pick());
-      $(c2).text(pick());
-      $(c3).text(pick());
+        $(c1).text(pick());
+        $(c2).text(pick());
+        $(c3).text(pick());
       }, speed);
       $(".analogy-item").css("background-color", "white");
-      // $('#analogies-container').css("background-color", "white");
       $(selectors).fadeTo(speed,1);
     }, (speed * 12));
   }, speed);
