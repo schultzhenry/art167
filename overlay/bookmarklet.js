@@ -33,15 +33,12 @@
       var textTags = 'h1, h2, h3, h4, h5, h6, p, pre, span, a, img';
 
       $('*').css({
-        'background': 'black',
-        'background-color': 'black',
         'color': 'black'
       });
 
       $('body').css({
         'background': 'black',
         'background-color': 'black',
-        'color': 'black',
         'cursor': 'none'
       });
 
