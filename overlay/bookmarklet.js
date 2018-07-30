@@ -89,25 +89,25 @@
       h = $(window).height()
 
       // Create background blob
-      var bgBlobSize = 180;
-      var bgBlobStyle = {
+      var spotSize = 180;
+      var spotStyle = {
         'position': 'fixed',
         'top': '0px',
         'left': '0px',
         'width': '260px',
         'height': '260px',
         'background-color': 'white',
-        'filter': 'blur(80px)',
+        'filter': 'blur(20px)',
         'border-radius': '50%',
         'z-index': '1000000',
         'pointer-events': 'none'
       };
-      var bgBlobTag = '<div id=\'bgBlob\'></div>';
+      var spotTag = '<div id=\'spot\'></div>';
 
       // Check for existence then add
       if (!$('#bgBlob').length) {
-        $('body').append(bgBlobTag);
-        $('#bgBlob').css(bgBlobStyle);
+        $('body').append(spotTag);
+        $('#bgBlob').css(spotStyle);
       }
 
       var beam = '<svg id=\"beam\" height=\"210\" width=\"500\"><line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,0,0);stroke-width:2\" /></svg>';
@@ -131,7 +131,7 @@
 
       onmousemove = function(e) {
         // console.log('mouse location:', e.clientX, e.clientY)
-        $('#bgBlob').css({
+        $('#spot').css({
           'left': String((e.clientX - (260 / 2))) + 'px',
           'top': String((e.clientY - (260 / 2)) + 'px')
         });
