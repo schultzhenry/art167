@@ -32,7 +32,7 @@
 
       $('body').css({
         'background': 'black',
-        'color': 'white',
+        'color': 'black',
         'cursor': 'none'
       });
 
@@ -40,9 +40,49 @@
         'color': 'black'
       });
 
-      $('p:hover').css({
-        'color': 'yellow',
-        'text-shadow': '0px -3px 2px white'
+      // $('p:hover::after').css({
+      //   'color': 'yellow'
+      // });
+
+      var textTags = 'h1, h2, h3, h4, h5, h6, p, span, a, img';
+
+      $(textTags).mouseover(function() {
+        $(this).css({
+          'text-shadow': '0px 0px 60px Light',
+          'text-shadow': '0px 0px 28px LightCyan',
+          'color': 'white'
+        });
+      });
+
+      $(textTags).mouseleave(function() {
+        $(this).css({
+          'transition': 'all 8s',
+          'text-shadow': 'none',
+          'color': 'black'
+        });
+      });
+
+      $('img').css({
+        'filter': 'brightness(0.0)'
+      });
+
+      $('img').mouseover(function() {
+        $(this).css({
+          'filter': 'brightness(1)',
+          '-moz-box-shadow': '0 0 60px LightCyan',
+          '-webkit-box-shadow': '0 0 60px LightCyan',
+          'box-shadow': '0px 0px 60px LightCyan'
+        });
+      });
+
+      $('img').mouseleave(function() {
+        $(this).css({
+          'transition': 'all 8s',
+          'filter': 'brightness(0)',
+          '-moz-box-shadow': 'none',
+          '-webkit-box-shadow': 'none',
+          'box-shadow': 'none'
+        });
       });
 
       // var all = $("*");
@@ -64,7 +104,7 @@
         "left": "0px",
         "width": "260px",
         "height": "260px",
-        "background-color": "LightYellow",
+        "background-color": "LightCyan",
         "filter": "blur(140px)",
         "border-radius": "50%",
         "z-index": "-1"
