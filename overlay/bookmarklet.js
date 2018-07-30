@@ -110,7 +110,7 @@
         $('#bgBlob').css(spotStyle);
       }
 
-      var beam = '<svg id=\"beam\" height=\"210\" width=\"500\"><line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,0,0);stroke-width:2\" /></svg>';
+      var beam = '<svg id=\"beam\" height=\"210\" width=\"500\"><line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,180,0);stroke-width:2\" /></svg>';
       var beamStyle = {
         'position': 'fixed',
         'top': '0px',
