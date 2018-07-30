@@ -98,7 +98,7 @@
         'background-color': 'LightCyan',
         'filter': 'blur(140px)',
         'border-radius': '50%',
-        'z-index': '-1'
+        'z-index': '1000000'
       };
       var bgBlobTag = '<div id=\'bgBlob\'></div>';
 

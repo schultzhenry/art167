@@ -22,7 +22,7 @@ a, a:visited {
 }
 img {
   width: 320px;
-  display: block;
+  display: inline;
 }
 
 .img-container {
@@ -31,5 +31,9 @@ img {
 
 #info {
   padding: 0px;
+  width: 90vw;
+}
+
+#photos {
   width: 90vw;
 }
