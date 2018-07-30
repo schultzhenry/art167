@@ -69,14 +69,14 @@
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
-          '-moz-box-shadow': '0 0 20px white, 0 0 60px white, 0 0 80px white',
-          '-webkit-box-shadow': '0 0 20px white, 0 0 60px white, 0 0 80px white',
-          'box-shadow': '0 0 20px white, 0 0 60px white, 0px 0px 80px white'
+          '-moz-box-shadow': '0 0 80px white',
+          '-webkit-box-shadow': '0 0 80px white',
+          'box-shadow': '0 0 80px white'
         });
       });
       $('img').mouseleave(function() {
         $(this).css({
-          'transition': 'all 4s',
+          'transition': 'all 3s',
           'filter': 'brightness(0)',
           '-moz-box-shadow': 'none',
           '-webkit-box-shadow': 'none',
@@ -97,7 +97,7 @@
         'width': '260px',
         'height': '260px',
         'background-color': 'white',
-        'filter': 'blur(20px)',
+        'filter': 'blur(30px)',
         'border-radius': '50%',
         'z-index': '1000000',
         'pointer-events': 'none'
@@ -109,7 +109,9 @@
         $('#spot').css(spotStyle);
       }
 
-      var beam = '<svg id=\"beam\" height=\"210\" width=\"500\"><line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,180,0);stroke-width:2\" /></svg>';
+      var beam = '<svg id=\"beam\" height=\"210\" width=\"500\">' +
+                 '<line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,180,0);stroke-width:2\" />' + 
+                 '</svg>';
       var beamStyle = {
         'position': 'fixed',
         'top': '0px',
@@ -124,6 +126,7 @@
         $('#beam').css(beamStyle);
       }
 
+      $('#beam').css(beamStyle);
       window.onresize = function(event) {
         w = $(window).width()
         h = $(window).height()
