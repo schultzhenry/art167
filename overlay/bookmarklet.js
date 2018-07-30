@@ -1,22 +1,22 @@
 (function(){
   // This part checks for jQuery
-  var version = "1.10.2";
+  var version = '1.10.2';
   // Checks for prior inclusion and version
   if (window.jQuery === undefined || window.jQuery.fn.jquery < version) {
     // If there isn't an instance of jQuery, create one and append it to the head
     // Else run our bookmarklet!
     var done = false;
-    var script = document.createElement("script");
-    script.src = "https://ajax.googleapis.com/ajax/libs/jquery/" + version + "/jquery.min.js";
+    var script = document.createElement('script');
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/' + version + '/jquery.min.js';
     script.onload = script.onreadystatechange = function() {
-      if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+      if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
               done = true;
               initBookmarklet(window.jQuery);
       } else {
         console.log('error loading');
       }
     };
-    document.getElementsByTagName("head")[0].appendChild(script);
+    document.getElementsByTagName('head')[0].appendChild(script);
     if (window.jQuery === undefined || window.jQuery.fn.jquery < version) {
       console.log(':::');
     } else {
@@ -35,11 +35,9 @@
       $('html').css({
         'background': 'black'
       });
-
       $('*:not(body)').css({
         'color': 'black'
       });
-
       $('body').css({
         'cursor': 'none',
         'background': 'transparent'
@@ -75,7 +73,6 @@
           'box-shadow': '0 0 20px white, 0 0 60px white, 0px 0px 80px white'
         });
       });
-
       $('img').mouseleave(function() {
         $(this).css({
           'transition': 'all 4s',
@@ -93,20 +90,19 @@
       // Create background blob
       var bgBlobSize = 180;
       var bgBlobStyle = {
-        "position": "fixed",
-        "top": "0px",
-        "left": "0px",
-        "width": "260px",
-        "height": "260px",
-        "background-color": "LightCyan",
-        "filter": "blur(140px)",
-        "border-radius": "50%",
-        "z-index": "-1"
+        'position': 'fixed',
+        'top': '0px',
+        'left': '0px',
+        'width': '260px',
+        'height': '260px',
+        'background-color': 'LightCyan',
+        'filter': 'blur(140px)',
+        'border-radius': '50%',
+        'z-index': '-1'
       };
-      var bgBlobId = "id=\'bgBlob\'";
-      var bgBlobTag = "<div " + bgBlobId + "></div>";
+      var bgBlobTag = '<div id=\'bgBlob\'></div>';
 
-      // If background blob doesn't exist, create
+      // Check for existence then add
       if (!$('#bgBlob').length) {
         $('body').append(bgBlobTag);
         $('#bgBlob').css(bgBlobStyle);
@@ -118,10 +114,10 @@
       };
 
       onmousemove = function(e) {
-        // console.log("mouse location:", e.clientX, e.clientY)
+        // console.log('mouse location:', e.clientX, e.clientY)
         $('#bgBlob').css({
-          "left": String((e.clientX - (260 / 2))) + "px",
-          "top": String((e.clientY - (260 / 2)) + "px")
+          'left': String((e.clientX - (260 / 2))) + 'px',
+          'top': String((e.clientY - (260 / 2)) + 'px')
         });
       }
     })();
