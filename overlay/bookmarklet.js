@@ -40,7 +40,7 @@
       });
       $('body').css({
         'cursor': 'none',
-        'background': 'transparent'
+        'background': 'black'
       });
 
       $(textTags).mouseover(function() {
@@ -61,7 +61,8 @@
       });
 
       $('img').css({
-        'filter': 'brightness(0.0)'
+        'filter': 'brightness(0.0)',
+        'z-index': '1000000000000'
       });
 
       $('img').mouseover(function() {
@@ -98,7 +99,8 @@
         'background-color': 'LightCyan',
         'filter': 'blur(140px)',
         'border-radius': '50%',
-        'z-index': '1000000'
+        'z-index': '1000000',
+        'pointer-events': 'none'
       };
       var bgBlobTag = '<div id=\'bgBlob\'></div>';
 
