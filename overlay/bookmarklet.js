@@ -110,6 +110,17 @@
         $('#bgBlob').css(bgBlobStyle);
       }
 
+      var beam = '<svg id=\"beam\" height=\"210\" width=\"500\"><line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,0,0);stroke-width:2\" /></svg>';
+      var beamStyle = {
+        'z-index': '1000000',
+        'pointer-events': 'none'
+      }
+
+      // Check for existence then add
+      if (!$('#beam').length) {
+        $('body').append(beam);
+        $('#beam').css(beamStyle);
+      }
       window.onresize = function(event) {
         w = $(window).width()
         h = $(window).height()
