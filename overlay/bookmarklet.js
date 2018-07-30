@@ -102,12 +102,11 @@
         'z-index': '1000000',
         'pointer-events': 'none'
       };
-      var spotTag = '<div id=\'spot\'></div>';
 
       // Check for existence then add
-      if (!$('#bgBlob').length) {
-        $('body').append(spotTag);
-        $('#bgBlob').css(spotStyle);
+      if (!$('#spot').length) {
+        $('body').append('<div id=\'spot\'></div>');
+        $('#spot').css(spotStyle);
       }
 
       var beam = '<svg id=\"beam\" height=\"210\" width=\"500\"><line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,180,0);stroke-width:2\" /></svg>';
@@ -124,6 +123,7 @@
         $('body').append(beam);
         $('#beam').css(beamStyle);
       }
+
       window.onresize = function(event) {
         w = $(window).width()
         h = $(window).height()
