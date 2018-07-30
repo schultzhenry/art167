@@ -49,7 +49,7 @@
       $(textTags).mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
-          'text-shadow': '0px 0px 60px Light',
+          'text-shadow': '0px 0px 60px Blue',
           'text-shadow': '0px 0px 28px LightCyan',
           'color': 'white'
         });
@@ -71,9 +71,9 @@
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
-          '-moz-box-shadow': '0 0 60px LightCyan',
-          '-webkit-box-shadow': '0 0 60px LightCyan',
-          'box-shadow': '0px 0px 60px LightCyan'
+          '-moz-box-shadow': '0 0 20px Violet, 0 0 60px Cyan, 0 0 80px Blue',
+          '-webkit-box-shadow': '0 0 20px Violet, 0 0 60px Cyan, 0 0 80px Blue',
+          'box-shadow': '0 0 20px Violet, 0 0 60px Cyan, 0px 0px 80px Blue'
         });
       });
 
