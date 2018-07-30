@@ -96,8 +96,8 @@
         'left': '0px',
         'width': '260px',
         'height': '260px',
-        'background-color': 'LightCyan',
-        // 'filter': 'blur(140px)',
+        'background-color': 'white',
+        'filter': 'blur(80px)',
         'border-radius': '50%',
         'z-index': '1000000',
         'pointer-events': 'none'
