@@ -70,9 +70,9 @@
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
-          '-moz-box-shadow': '0 0 20px Violet, 0 0 60px Cyan, 0 0 80px Blue',
-          '-webkit-box-shadow': '0 0 20px Violet, 0 0 60px Cyan, 0 0 80px Blue',
-          'box-shadow': '0 0 20px Violet, 0 0 60px Cyan, 0px 0px 80px Blue'
+          '-moz-box-shadow': '0 0 20px white, 0 0 60px white, 0 0 80px white',
+          '-webkit-box-shadow': '0 0 20px white, 0 0 60px white, 0 0 80px white',
+          'box-shadow': '0 0 20px white, 0 0 60px white, 0px 0px 80px white'
         });
       });
 
