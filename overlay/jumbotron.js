@@ -2,7 +2,8 @@
   // This part checks for jQuery
   var version = "1.10.2";
   // Checks for prior inclusion and version
-  if (window.jQuery === undefined || window.jQuery.fn.jquery < version) {
+  if (window.jQuery === undefined ||
+      window.jQuery.fn.jquery < version) {
     // If there isn't an instance of jQuery, create one and append it to the head
     // Else run our bookmarklet!
     var done = false;
@@ -30,14 +31,13 @@
   function initBookmarklet($) {
     (window.bookmarklet = function() {
 
-      $('body').css({
-        'cursor': 'none'
-      });
+      $('body').css({'cursor': 'none'});
 
-      // Get browser window and height
+      // Get initial browser dimensions
       w = $(window).width()
       h = $(window).height()
 
+      // Create jumbotron and apply style
       var jumbotron = "<div id=\'jumbotron\'></div>";
       var jumbotronFraction = 6;
       var jumbotronStyle = {
@@ -50,10 +50,10 @@
         "width": String(w / jumbotronFraction),
         "height": String(h / jumbotronFraction)
       }
-
       $('body').append(jumbotron);
       $('#jumbotron').css(jumbotronStyle);
 
+      // Create jumbotron cursor and apply style
       var tinyCursor = "<div id=\'tinyCursor\'></div>";
       var tinyCursorStyle = {
         "position": "fixed",
@@ -65,10 +65,10 @@
         "bottom": "4px",
         "z-index": "1000000000000"
       };
-
       $('body').append(tinyCursor);
       $('#tinyCursor').css(tinyCursorStyle);
 
+      // Adjust jumbotron on window adjust
       window.onresize = function(event) {
         w = $(window).width()
         h = $(window).height()
@@ -80,11 +80,13 @@
         });
       };
 
+      // Adjust tinyCursor location when
+      // mouse moves
       onmousemove = function(e) {
         // console.log("mouse location:", e.clientX, e.clientY)
         $('#tinyCursor').css({
-          "left": String((e.clientX / jumbotronFraction) + 3) + "px",
-          "bottom": String(((h - e.clientY) / jumbotronFraction) + 3) + "px"
+          'bottom': String((e.clientX / jumbotronFraction) + 3) + "px",
+          'bottom': String(((h - e.clientY) / jumbotronFraction) + 3) + "px"
         });
       };
     })();

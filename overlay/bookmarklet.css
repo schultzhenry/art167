@@ -1,12 +1,35 @@
 * {
-  font-family: sans-serif
+  font-family: sans-serif;
+  text-align: center
 }
 
+.top {
+  height: 36px;
+  background: black;
+  color: white;
+  padding: 0.5em;
+  padding-right: 0em;
+  margin-left: 1vw;
+  margin-right: 0px;
+}
+
+p {
+  margin-left: 1vw;
+}
+
+a, a:visited {
+  color: white
+}
 img {
-  width: 480px;
+  width: 660px;
   display: block;
 }
 
 .img-container {
   padding: 16px;
+}
+
+#info {
+  padding: 0px;
+  width: 90vw;
 }
