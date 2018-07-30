@@ -6,3 +6,7 @@ img {
   width: 480px;
   display: block;
 }
+
+.img-container {
+  padding: 16px;
+}

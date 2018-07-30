@@ -48,6 +48,7 @@
 
       $(textTags).mouseover(function() {
         $(this).css({
+          'transition': 'all 0.5s',
           'text-shadow': '0px 0px 60px Light',
           'text-shadow': '0px 0px 28px LightCyan',
           'color': 'white'
@@ -56,7 +57,7 @@
 
       $(textTags).mouseleave(function() {
         $(this).css({
-          'transition': 'all 8s',
+          'transition': 'all 4s',
           'text-shadow': 'none',
           'color': 'black'
         });
@@ -68,6 +69,7 @@
 
       $('img').mouseover(function() {
         $(this).css({
+          'transition': 'all 0.5s',
           'filter': 'brightness(1)',
           '-moz-box-shadow': '0 0 60px LightCyan',
           '-webkit-box-shadow': '0 0 60px LightCyan',
@@ -77,7 +79,7 @@
 
       $('img').mouseleave(function() {
         $(this).css({
-          'transition': 'all 8s',
+          'transition': 'all 4s',
           'filter': 'brightness(0)',
           '-moz-box-shadow': 'none',
           '-webkit-box-shadow': 'none',
