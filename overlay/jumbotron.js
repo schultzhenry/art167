@@ -38,7 +38,6 @@
       w = $(window).width()
       h = $(window).height()
 
-
       var jumbotron = "<div id=\'jumbotron\'></div>";
       var jumbotronFraction = 6;
       var jumbotronStyle = {
@@ -87,7 +86,7 @@
           "left": String((e.clientX / jumbotronFraction) + 3) + "px",
           "bottom": String(((h - e.clientY) / jumbotronFraction) + 3) + "px"
         });
-      }
+      };
     })();
   }
 })();
