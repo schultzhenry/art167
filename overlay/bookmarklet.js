@@ -32,21 +32,24 @@
 
       var textTags = 'h1, h2, h3, h4, h5, h6, p, pre, span, a, img';
 
-      $('*').css({
+      $('html').css({
+        'background': 'black'
+      });
+
+      $('*:not(body)').css({
         'color': 'black'
       });
 
       $('body').css({
-        'background': 'black',
-        'background-color': 'black',
-        'cursor': 'none'
+        'cursor': 'none',
+        'background': 'transparent'
       });
 
       $(textTags).mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
-          'text-shadow': '0px 0px 60px Blue',
-          'text-shadow': '0px 0px 28px LightCyan',
+          'text-shadow': '0px 0px 60px white',
+          'text-shadow': '0px 0px 28px white',
           'color': 'white'
         });
       });
