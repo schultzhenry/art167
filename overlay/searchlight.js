@@ -81,8 +81,9 @@
       }
       $('*:not(#spot)').mouseover(function() {
         $(this).css({
-          'transition': 'all 0.2s',
+          'transition': 'all 0.1s',
           'filter':'brightness(1)',
+          'visibility': 'visible',
           'text-shadow':'0 0 12px white,0 0 2px white',
           'color':'white'
         });
@@ -92,7 +93,7 @@
         setTimeout(function() {
           tag.css({
             'transition': 'all 4s',
-            'filter': 'brightness(0)',
+            'visibility': 'hidden',
             'text-shadow': 'none',
             'color': 'black'
           });
