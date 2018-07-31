@@ -79,30 +79,24 @@
           'top': String(y - 130) + 'px'
         });
       }
-      $('body *:not(#spot)').mouseover(function() {
+      $('*:not(#spot)').mouseover(function() {
         $(this).css({
           'transition': 'all 0.1s',
           'filter':'brightness(1)',
-          'visibility': 'visible',
           'text-shadow':'0 0 12px white,0 0 2px white',
           'color':'white'
         });
       });
-      $('body *:not(#spot)').mouseleave(function() {
+      $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
             'transition': 'all 4s',
-            'visibility': 'hidden',
+            'filter': 'brightness(0)',
             'text-shadow': 'none',
             'color': 'black'
           });
         }, 5000);
-      });
-      $('#spot').mouseleave(function() {
-        $(this).css({
-          'filter':'brightness(1)'
-        });
       });
     })();
   }
