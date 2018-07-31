@@ -40,7 +40,8 @@
       });
       $('body').css({
         'cursor': 'none',
-        'background': 'black'
+        // 'background': 'black',
+        'background-color': 'transparent'
       });
 
       $(textTags).mouseover(function() {
