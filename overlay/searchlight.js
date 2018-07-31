@@ -36,26 +36,25 @@
   function initBookmarklet($) {
     (window.bookmarklet = function() {
 
+      // First, make page go dark.
       var textTags = 'h1, h2, h3, h4, h5, h6' +
                      ' p, pre, span, a, img';
-
       $('*').css({
         'color': 'black',
         'background': 'black',
         'background-color': 'black',
         'border': 'none'
       });
-
       $('html, body, div').css({
         'cursor': 'none',
         'background': 'black',
         'background-color': 'black'
       });
-
       $(textTags).css({
         'background-color': 'transparent',
       });
 
+      // Second, create spotlight.
       // In case of multiple bookmarklet runs,
       // check for existence of spotlight before
       // appending it to page. Reapply style.
@@ -75,11 +74,11 @@
         'pointer-events': 'none'
       });
 
+      // Watch for mouseover.
       $(textTags + '*').mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
-          'text-shadow': '0px 0px 60px white',
-          'text-shadow': '0px 0px 28px white',
+          'text-shadow': '0 0 60px white, 0 0 28px white, 0 0 2px white',
           'color': 'white'
         });
       });
