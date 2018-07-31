@@ -99,6 +99,11 @@
           });
         }, 5000);
       });
+      $('#spot').mouseleave(function() {
+        $(this).css({
+          'filter':'brightness(1)'
+        });
+      });
     })();
   }
 })();
