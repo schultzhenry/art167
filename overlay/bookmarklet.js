@@ -37,11 +37,9 @@
       });
 
       $('html, body, div').css({
-        'color': 'black',
         'cursor': 'none',
         'background': 'black',
         'background-color': 'black'
-        'border-color': 'black'
       });
 
       $(textTags).mouseover(function() {
