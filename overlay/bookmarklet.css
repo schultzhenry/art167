@@ -44,10 +44,10 @@ body {
 }
 
 #dragme-background {
-  width: 260px;
-  height: 260px;
-  background-color: grey;
-  filter: blur(64px);
+  width: 200px;
+  height: 200px;
+  background-color: DimGrey;
+  filter: blur(76px);
   border-radius: 50%;
   transition: all 1s;
 }
@@ -85,12 +85,22 @@ button:focus {
   bottom: 0px;
   margin-bottom: 12vmin;
   margin-top: 2vmin;
-  font-size: 2.5vmin;
+  font-size: 2vmin;
   z-index: 1000;
-  line-height: 1.2em;
+  line-height: 1.8em;
 }
 
 .smallLink:link, .smallLink:visited {
+  transition: all 0.5s;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.smallLink:hover {
+  transition: all 0.5s;
+  text-shadow: 0 0 2vmin white, 0 0 1vmin white;
+}
+
+#drag-description {
+  font-size: 3.5vmin;
 }
