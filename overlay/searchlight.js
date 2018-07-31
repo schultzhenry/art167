@@ -79,7 +79,7 @@
           'top': String(y - 130) + 'px'
         });
       }
-      $('*:not(#spot)').mouseover(function() {
+      $('body *:not(#spot)').mouseover(function() {
         $(this).css({
           'transition': 'all 0.1s',
           'filter':'brightness(1)',
@@ -88,7 +88,7 @@
           'color':'white'
         });
       });
-      $('*:not(#spot)').mouseleave(function() {
+      $('body *:not(#spot)').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
