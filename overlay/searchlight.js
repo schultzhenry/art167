@@ -1,23 +1,24 @@
 (function(){
-  // This part checks for jQuery
+  // Check for jQuery.
+  // Set version for check.
   var version = '1.10.2';
-  // Checks for prior inclusion and version
+  // If there isn't an instance of jQuery,
+  // create one and append it to the head.
   if (window.jQuery === undefined ||
       window.jQuery.fn.jquery < version) {
-    // If there isn't an instance of jQuery, create one and append it to the head
-    // Else run our bookmarklet!
     var done = false;
     var script = document.createElement('script');
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/'
     script.src += version + '/jquery.min.js';
     script.onload = script.onreadystatechange = function() {
-      if (!done && (!this.readyState ||
-                    this.readyState == 'loaded' ||
-                    this.readyState == 'complete')) {
-              done = true;
-              initBookmarklet(window.jQuery);
+      if (!done &&
+          (!this.readyState ||
+           this.readyState == 'loaded' ||
+           this.readyState == 'complete')) {
+        done = true;
+        initBookmarklet(window.jQuery);
       } else {
-        console.log('error loading');
+        console.log('Error loading jQuery.');
       }
     };
     document.getElementsByTagName('head')[0].appendChild(script);
@@ -34,6 +35,20 @@
   // My bookmarklet function
   function initBookmarklet($) {
     (window.bookmarklet = function() {
+
+      // Create searchlight.
+      var spotStyle = {
+        'position': 'fixed',
+        'top': '0px',
+        'left': '0px',
+        'width': '260px',
+        'height': '260px',
+        'background-color': 'white',
+        'filter': 'blur(30px)',
+        'border-radius': '50%',
+        'z-index': '1000000',
+        'pointer-events': 'none'
+      };
 
       var textTags = 'h1, h2, h3, h4, h5, h6' +
                      ' p, pre, span, a, img';
@@ -104,22 +119,9 @@
         });
       });
 
-      // Create background blob
-      var spotSize = 180;
-      var spotStyle = {
-        'position': 'fixed',
-        'top': '0px',
-        'left': '0px',
-        'width': '260px',
-        'height': '260px',
-        'background-color': 'white',
-        'filter': 'blur(30px)',
-        'border-radius': '50%',
-        'z-index': '1000000',
-        'pointer-events': 'none'
-      };
-
-      // Check for existence then add
+      // In case of multiple bookmarklet runs,
+      // check for existence of spotlight before
+      // adding element.
       if (!$('#spot').length) {
         $('body').append('<div id=\'spot\'></div>');
         $('#spot').css(spotStyle);
