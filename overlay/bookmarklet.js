@@ -80,7 +80,7 @@
             '-webkit-box-shadow': 'none',
             'box-shadow': 'none'
           });
-        }, 1000);
+        }, 3000);
       });
 
       // Get browser window and height
