@@ -51,6 +51,10 @@
         'background-color': 'transparent',
       });
 
+      $(head).append(
+        '<style>.lit {transition:all 0.2s;filter:brightness(1);text-shadow:0 0 12px white,0 0 2px white;color:white;}</style>'
+      );
+
       // Second, create spotlight.
       // In case of multiple bookmarklet runs,
       // check for existence of spotlight before
@@ -78,12 +82,7 @@
         });
       }
       $('*:not(#spot)').mouseover(function() {
-        $(this).css({
-          'transition': 'all 0.2s',
-          'filter': 'brightness(1)',
-          'text-shadow': '0 0 12px white, 0 0 2px white',
-          'color': 'white'
-        });
+        $(this).addClass('lit');
       });
       $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
