@@ -7,10 +7,9 @@
 
 body {
   background: black;
-  font-family: 'Garamond', serif;
 }
 
-#dragme, #webring, #toggleButton {
+#dragme, #webring {
   text-align: center;
   position: fixed;
   padding: 0px;
@@ -28,6 +27,7 @@ body {
   max-height:100%;
   overflow:auto;
 }
+
 #dragme {
   width: 560px;
   height: 560px;
@@ -48,10 +48,23 @@ body {
   background-color: grey;
   filter: blur(64px);
   border-radius: 50%;
+  transition: all 1s;
 }
 
-#dragme-text, #dragme-background:hover {
-  cursor: pointer;
+#dragme-text {
+  pointer-events: none;
+}
+
+#dragme-text:hover, #dragme-background:hover {
+  cursor: move;
+}
+
+#dragme-background:hover {
+  transition: all 1s;
+  background-color: white;
+  filter: blur(30px);
+  width: 288px;
+  height: 288px;
 }
 
 

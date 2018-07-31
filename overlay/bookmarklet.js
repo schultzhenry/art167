@@ -40,12 +40,12 @@
         'color': 'black'
       });
 
-      $('body').css({
+      $('body, div').css({
         'cursor': 'none',
         'background': 'black',
         'background-color': 'black'
       });
-
+      
       $(textTags).mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
