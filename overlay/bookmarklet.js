@@ -35,9 +35,6 @@
       $('html').css({
         'background': 'black'
       });
-      $('::root').css({
-        '--background-color': 'transparent';
-      });
       $('*:not(body)').css({
         'color': 'black'
       });
