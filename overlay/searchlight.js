@@ -67,8 +67,7 @@
       });
 
       $(textTags).css({
-        'background': 'black',
-        'background-color': 'black'
+        'background-color': 'transparent',
       });
 
       // If searchlight already on, reapply style.
