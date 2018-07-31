@@ -83,12 +83,13 @@ button:focus {
   background-color: transparent;
   color: white;
   bottom: 0px;
-  padding-bottom: 12vmin;
-  padding-top: 2vmin;
+  margin-bottom: 12vmin;
+  margin-top: 2vmin;
   font-size: 2vmin;
   z-index: 1000;
 }
 
 .smallLink:link, .smallLink:visited {
+  cursor: pointer;
   text-decoration: underline;
 }

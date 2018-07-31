@@ -2,14 +2,18 @@
   // This part checks for jQuery
   var version = '1.10.2';
   // Checks for prior inclusion and version
-  if (window.jQuery === undefined || window.jQuery.fn.jquery < version) {
+  if (window.jQuery === undefined ||
+      window.jQuery.fn.jquery < version) {
     // If there isn't an instance of jQuery, create one and append it to the head
     // Else run our bookmarklet!
     var done = false;
     var script = document.createElement('script');
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/' + version + '/jquery.min.js';
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/'
+    script.src += version + '/jquery.min.js';
     script.onload = script.onreadystatechange = function() {
-      if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+      if (!done && (!this.readyState ||
+                    this.readyState == 'loaded' ||
+                    this.readyState == 'complete')) {
               done = true;
               initBookmarklet(window.jQuery);
       } else {
@@ -17,7 +21,8 @@
       }
     };
     document.getElementsByTagName('head')[0].appendChild(script);
-    if (window.jQuery === undefined || window.jQuery.fn.jquery < version) {
+    if (window.jQuery === undefined ||
+        window.jQuery.fn.jquery < version) {
       console.log(':::');
     } else {
       console.log('jquery loaded');
@@ -30,10 +35,14 @@
   function initBookmarklet($) {
     (window.bookmarklet = function() {
 
-      var textTags = 'h1, h2, h3, h4, h5, h6, p, pre, span, a, img';
+      var textTags = 'h1, h2, h3, h4, h5, h6' +
+                     ' p, pre, span, a, img';
 
-      $('*:not(body)').css({
+      $('*').css({
         'color': 'black'
+        'background': 'black',
+        'background-color': 'black',
+        'border': 'none'
       });
 
       $('html, body, div').css({
@@ -42,6 +51,12 @@
         'background-color': 'black'
       });
 
+      $(textTags).css({
+        'background': 'black',
+        'background-color': 'black'
+      });
+
+      // If searchlight already on, reapply style.
       if ($('#spot').length) {
         $('#spot').css(spotStyle);
       }
@@ -86,10 +101,6 @@
         });
       });
 
-      // Get browser window and height
-      w = $(window).width()
-      h = $(window).height()
-
       // Create background blob
       var spotSize = 180;
       var spotStyle = {
@@ -111,13 +122,7 @@
         $('#spot').css(spotStyle);
       }
 
-      window.onresize = function(event) {
-        w = $(window).width()
-        h = $(window).height()
-      };
-
       onmousemove = function(e) {
-        // console.log('mouse location:', e.clientX, e.clientY)
         $('#spot').css({
           'left': String((e.clientX - (260 / 2))) + 'px',
           'top': String((e.clientY - (260 / 2)) + 'px')
