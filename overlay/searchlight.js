@@ -32,23 +32,9 @@
     initBookmarklet(window.jQuery);
   }
 
-  // My bookmarklet function
+  // Searchlight function.
   function initBookmarklet($) {
     (window.bookmarklet = function() {
-
-      // Create searchlight.
-      var spotStyle = {
-        'position': 'fixed',
-        'top': '0px',
-        'left': '0px',
-        'width': '260px',
-        'height': '260px',
-        'background-color': 'white',
-        'filter': 'blur(30px)',
-        'border-radius': '50%',
-        'z-index': '1000000',
-        'pointer-events': 'none'
-      };
 
       var textTags = 'h1, h2, h3, h4, h5, h6' +
                      ' p, pre, span, a, img';
@@ -70,10 +56,24 @@
         'background-color': 'transparent',
       });
 
-      // If searchlight already on, reapply style.
-      if ($('#spot').length) {
-        $('#spot').css(spotStyle);
+      // In case of multiple bookmarklet runs,
+      // check for existence of spotlight before
+      // appending it to page. Reapply style.
+      if (!$('#spot').length) {
+        $('body').append('<div id=\'spot\'></div>');
       }
+      $('#spot').css({
+        'position': 'fixed',
+        'top': '0px',
+        'left': '0px',
+        'width': '260px',
+        'height': '260px',
+        'background-color': 'white',
+        'filter': 'blur(30px)',
+        'border-radius': '50%',
+        'z-index': '1000000',
+        'pointer-events': 'none'
+      });
 
       $(textTags + '*').mouseover(function() {
         $(this).css({
@@ -117,14 +117,6 @@
           });
         }, 3000);
       });
-
-      // In case of multiple bookmarklet runs,
-      // check for existence of spotlight before
-      // adding element.
-      if (!$('#spot').length) {
-        $('body').append('<div id=\'spot\'></div>');
-        $('#spot').css(spotStyle);
-      }
 
       onmousemove = function(e) {
         $('#spot').css({

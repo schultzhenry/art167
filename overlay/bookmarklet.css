@@ -44,10 +44,10 @@ body {
 }
 
 #dragme-background {
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   background-color: DimGrey;
-  filter: blur(76px);
+  filter: blur(80px);
   border-radius: 50%;
   transition: all 1s;
 }
