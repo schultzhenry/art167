@@ -80,7 +80,7 @@
       onmousemove = function(e) {
         $('#spot').css({
           'left': String(e.clientX - 130) + 'px',
-          'top': String(e.clientY - 130) + 'px')
+          'top': String(e.clientY - 130) + 'px'
         });
       }
 
