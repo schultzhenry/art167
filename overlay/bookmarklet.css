@@ -9,7 +9,7 @@ body {
   background: black;
 }
 
-#dragme, #webring {
+#dragme, #bottom-links {
   text-align: center;
   position: fixed;
   padding: 0px;
@@ -40,6 +40,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 5vmin;
+  display: none
 }
 
 #dragme-background {
@@ -78,7 +79,7 @@ button:focus {
   outline: 0;
 }
 
-#webring, #webring a {
+#bottom-links, #bottom-links a {
   background-color: transparent;
   color: white;
   bottom: 0px;
