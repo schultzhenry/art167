@@ -37,8 +37,8 @@
     (window.bookmarklet = function() {
 
       // First, make page go dark.
-      var textTags = 'h1, h2, h3, h4, h5, h6' +
-                     ' p, pre, span, a, img';
+      var textTags = 'h1, h2, h3, h4, h5, h6,' +
+                     'p, pre, span, a, img';
       $('*').css({
         'color': 'black',
         'background': 'black',
@@ -52,6 +52,10 @@
       });
       $(textTags).css({
         'background-color': 'transparent',
+      });
+
+      $('img, hr, svg').css({
+        'filter': 'brightness(0.0)'
       });
 
       // Second, create spotlight.
@@ -94,16 +98,13 @@
         }, 4000);
       });
 
-      $('img, hr, svg').css({
-        'filter': 'brightness(0.0)',
-        'z-index': '1000000000000'
-      });
       $('img, hr, svg').mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
         });
       });
+
       $('img, hr, svg').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
