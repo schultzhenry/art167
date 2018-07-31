@@ -51,7 +51,7 @@
         'background-color': 'transparent',
       });
 
-      $(head).append(
+      $('head').append(
         '<style>.lit {transition:all 0.2s;filter:brightness(1);text-shadow:0 0 12px white,0 0 2px white;color:white;}</style>'
       );
 
