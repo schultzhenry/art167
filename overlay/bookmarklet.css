@@ -47,9 +47,10 @@ body {
   width: 190px;
   height: 190px;
   background-color: DimGrey;
-  filter: blur(80px);
+  filter: blur(60px);
   border-radius: 50%;
   transition: all 1s;
+  overflow:auto;
 }
 
 #dragme-text {
