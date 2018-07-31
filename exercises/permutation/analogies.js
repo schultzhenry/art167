@@ -53,8 +53,8 @@ $(document).ready(function() {
         $(c2).text(pick());
         $(c3).text(pick());
       }, speed);
-      // $(".analogy-item").css("background-color", "white");
       $(selectors).fadeTo(speed,1);
+      $(".analogy-item").css("background-color", "white");
     }, (speed * 12));
   }, speed);
 });
