@@ -84,6 +84,7 @@
           'color': 'white'
         });
       });
+
       $(textTags).mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
@@ -109,14 +110,13 @@
         });
       });
       $('img, hr, svg').mouseleave(function() {
-        $(this).css({
-          'transition': 'all 3s',
-        }).delay(1000).css({
-          'filter': 'brightness(0)',
-          // '-moz-box-shadow': 'none',
-          // '-webkit-box-shadow': 'none',
-          // 'box-shadow': 'none'
-        });
+        var tag = $(this);
+        setTimeout(function() {
+          tag.css({
+            'transition': 'all 4s',
+            'filter': 'brightness(0)'
+          });
+        }, 3000);
       });
 
       // In case of multiple bookmarklet runs,
