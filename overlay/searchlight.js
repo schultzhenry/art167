@@ -72,8 +72,8 @@
 
       // When mouse moves, update spotlight position.
       $('#spot').mousemove(function(e) {
-        var x = e.pageX;
-        var y = e.pageY;
+        var x = e.clientX;
+        var y = e.clientY;
         $(this).css({
           'left': String(x - 130) + 'px',
           'top': String(y - 130) + 'px'
