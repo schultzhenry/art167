@@ -10,8 +10,7 @@
     <div id='info'>
       <h1 class='top'>
         information overlay&nbsp;&nbsp;&nbsp;&nbsp;
-        <!-- <a href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/bookmarklet.js';})();"> -->
-        <a href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='bookmarklet.js';})();">
+        <a href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/bookmarklet.js';})();">
           lights
         </a>&nbsp;
         <a href="javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/jumbotron.js';})();">
@@ -53,5 +52,13 @@
         </div>
       </div>
     </div>
+    <svg height="110" width="110">
+      <defs>
+        <filter id="f1" x="0" y="0">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+        </filter>
+      </defs>
+      <rect width="90" height="90" stroke="green" stroke-width="10" filter="url(#f1)"/>
+    </svg>
   </body>
 </html>

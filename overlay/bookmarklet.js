@@ -51,7 +51,6 @@
           'color': 'white'
         });
       });
-
       $(textTags).mouseleave(function() {
         $(this).css({
           'transition': 'all 4s',
@@ -64,7 +63,6 @@
         'filter': 'brightness(0.0)',
         'z-index': '1000000000000'
       });
-
       $('img').mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
@@ -109,24 +107,6 @@
         $('#spot').css(spotStyle);
       }
 
-      var beam = '<svg id=\"beam\" height=\"210\" width=\"500\">' +
-                 '<line x1=\"0\" y1=\"0" x2=\"200\" y2=\"200" style=\"stroke:rgb(255,180,0);stroke-width:2\" />' + 
-                 '</svg>';
-      var beamStyle = {
-        'position': 'fixed',
-        'top': '0px',
-        'left': '0px',
-        'z-index': '1000000',
-        'pointer-events': 'none'
-      }
-
-      // Check for existence then add
-      if (!$('#beam').length) {
-        $('body').append(beam);
-        $('#beam').css(beamStyle);
-      }
-
-      $('#beam').css(beamStyle);
       window.onresize = function(event) {
         w = $(window).width()
         h = $(window).height()
@@ -138,6 +118,9 @@
           'left': String((e.clientX - (260 / 2))) + 'px',
           'top': String((e.clientY - (260 / 2)) + 'px')
         });
+
+        // $('#beam').attr('x2', String(e.clientX) + 'px');
+        // $('#beam').attr('y2', String(e.clientY) + 'px');
       }
     })();
   }
