@@ -90,7 +90,7 @@
       $(textTags + '*').mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
-          'text-shadow': '0 0 60px white, 0 0 28px white, 0 0 2px white',
+          'text-shadow': '0 0 28px white, 0 0 2px white',
           'color': 'white'
         });
       });
