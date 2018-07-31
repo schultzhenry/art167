@@ -91,14 +91,14 @@ button:focus {
 }
 
 .smallLink:link, .smallLink:visited {
-  transition: all 0.5s;
+  transition: all 0.2s;
   cursor: pointer;
   text-decoration: underline;
 }
 
 .smallLink:hover {
-  transition: all 0.5s;
-  text-shadow: 0 0 2vmin white, 0 0 1vmin white;
+  transition: all 0.2s;
+  text-shadow: 0 0 1vmin white, 0 0 0.1vmin white;
 }
 
 #drag-description {

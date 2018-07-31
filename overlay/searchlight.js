@@ -35,7 +35,6 @@
   // Searchlight function.
   function initBookmarklet($) {
     (window.bookmarklet = function() {
-
       // First, make page dark.
       var textTags = 'h1, h2, h3, h4, h5, h6,' +
                      'p, pre, span, a, img';
@@ -43,17 +42,13 @@
         'color': 'black',
         'background': 'black',
         'background-color': 'black',
+        'filter': 'brightness(0.0)',
         'text-shadow': 'none',
         'border': 'none',
         'cursor': 'none'
       });
-
       $(textTags).css({
         'background-color': 'transparent',
-      });
-
-      $('img, hr, svg').css({
-        'filter': 'brightness(0.0)'
       });
 
       // Second, create spotlight.
@@ -75,7 +70,6 @@
         'z-index': '1000000',
         'pointer-events': 'none'
       });
-
       // When mouse moves, update spotlight position.
       onmousemove = function(e) {
         $('#spot').css({
@@ -83,26 +77,6 @@
           'top': String(e.clientY - 130) + 'px'
         });
       }
-
-      // // Hover effects o for text-related elements.
-      // $('*').mouseover(function() {
-      //   $(this).css({
-      //     'transition': 'all 0.2s',
-      //     'text-shadow': '0 0 12px white, 0 0 2px white',
-      //     'color': 'white'
-      //   });
-      // });
-      // $('*').mouseleave(function() {
-      //   var tag = $(this);
-      //   setTimeout(function() {
-      //     tag.css({
-      //       'transition': 'all 4s',
-      //       'text-shadow': 'none',
-      //       'color': 'black'
-      //     });
-      //   }, 4000);
-      // });
-
       $('*:not(#spot)').mouseover(function() {
         $(this).css({
           'transition': 'all 0.2s',
@@ -111,7 +85,6 @@
           'color': 'white'
         });
       });
-
       $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
