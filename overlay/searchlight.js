@@ -36,20 +36,17 @@
   function initBookmarklet($) {
     (window.bookmarklet = function() {
 
-      // First, make page go dark.
+      // First, make page dark.
       var textTags = 'h1, h2, h3, h4, h5, h6,' +
                      'p, pre, span, a, img';
       $('*').css({
         'color': 'black',
         'background': 'black',
         'background-color': 'black',
-        'border': 'none'
+        'border': 'none',
+        'cursor': 'none'
       });
-      $('html, body, div').css({
-        'cursor': 'none',
-        'background': 'black',
-        'background-color': 'black'
-      });
+
       $(textTags).css({
         'background-color': 'transparent',
       });
@@ -86,39 +83,42 @@
         });
       }
 
-      // Watch for mouseover.
-      $(textTags + '*').mouseover(function() {
+      // // Hover effects o for text-related elements.
+      // $('*').mouseover(function() {
+      //   $(this).css({
+      //     'transition': 'all 0.2s',
+      //     'text-shadow': '0 0 12px white, 0 0 2px white',
+      //     'color': 'white'
+      //   });
+      // });
+      // $('*').mouseleave(function() {
+      //   var tag = $(this);
+      //   setTimeout(function() {
+      //     tag.css({
+      //       'transition': 'all 4s',
+      //       'text-shadow': 'none',
+      //       'color': 'black'
+      //     });
+      //   }, 4000);
+      // });
+
+      $('*').mouseover(function() {
         $(this).css({
-          'transition': 'all 0.5s',
-          'text-shadow': '0 0 28px white, 0 0 2px white',
+          'transition': 'all 0.2s',
+          'filter': 'brightness(1)',
+          'text-shadow': '0 0 12px white, 0 0 2px white',
           'color': 'white'
         });
       });
 
-      $(textTags + '*').mouseleave(function() {
+      $('*').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
             'transition': 'all 4s',
+            'filter': 'brightness(0)',
             'text-shadow': 'none',
             'color': 'black'
-          });
-        }, 4000);
-      });
-
-      $('img, hr, svg').mouseover(function() {
-        $(this).css({
-          'transition': 'all 0.5s',
-          'filter': 'brightness(1)',
-        });
-      });
-
-      $('img, hr, svg').mouseleave(function() {
-        var tag = $(this);
-        setTimeout(function() {
-          tag.css({
-            'transition': 'all 4s',
-            'filter': 'brightness(0)'
           });
         }, 4000);
       });
