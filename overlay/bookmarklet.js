@@ -58,11 +58,11 @@
         });
       });
 
-      $('img').css({
+      $('img, hr, svg').css({
         'filter': 'brightness(0.0)',
         'z-index': '1000000000000'
       });
-      $('img').mouseover(function() {
+      $('img, hr, svg').mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
@@ -71,16 +71,15 @@
           'box-shadow': '0 0 80px white'
         });
       });
-      $('img').mouseleave(function() {
-        setTimeout(function(){
-          $(this).css({
-            'transition': 'all 3s',
-            'filter': 'brightness(0)',
-            '-moz-box-shadow': 'none',
-            '-webkit-box-shadow': 'none',
-            'box-shadow': 'none'
-          });
-        }, 3000);
+      $('img, hr, svg').mouseleave(function() {
+        $(this).css({
+          'transition': 'all 3s',
+        }).delay(1000).css({
+          'filter': 'brightness(0)',
+          '-moz-box-shadow': 'none',
+          '-webkit-box-shadow': 'none',
+          'box-shadow': 'none'
+        });
       });
 
       // Get browser window and height
