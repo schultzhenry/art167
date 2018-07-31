@@ -71,17 +71,17 @@
       });
 
       // When mouse moves, update spotlight position.
-      onmousemove = function(e) {
-        var x = e.clientX;
-        var y = e.clientY;
-        $('#spot').css({
+      $('#spot').mousemove(function(e) {
+        var x = e.pageX;
+        var y = e.pageY;
+        $(this).css({
           'left': String(x - 130) + 'px',
           'top': String(y - 130) + 'px'
         });
-      }
+      });
       $('*:not(#spot)').mouseover(function() {
         $(this).css({
-          'transition': 'all 0.1s',
+          'transition':'all 0.1s',
           'filter':'brightness(1)',
           'text-shadow':'0 0 12px white,0 0 2px white',
           'color':'white'
@@ -91,10 +91,10 @@
         var tag = $(this);
         setTimeout(function() {
           tag.css({
-            'transition': 'all 4s',
-            'filter': 'brightness(0)',
-            'text-shadow': 'none',
-            'color': 'black'
+            'transition':'all 4s',
+            'filter':'brightness(0)',
+            'text-shadow':'none',
+            'color':'black'
           });
         }, 5000);
       });
