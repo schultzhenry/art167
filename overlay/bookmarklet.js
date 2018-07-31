@@ -72,13 +72,15 @@
         });
       });
       $('img').mouseleave(function() {
-        $(this).css({
-          'transition': 'all 3s',
-          'filter': 'brightness(0)',
-          '-moz-box-shadow': 'none',
-          '-webkit-box-shadow': 'none',
-          'box-shadow': 'none'
-        });
+        setTimeout(function(){
+          $(this).css({
+            'transition': 'all 3s',
+            'filter': 'brightness(0)',
+            '-moz-box-shadow': 'none',
+            '-webkit-box-shadow': 'none',
+            'box-shadow': 'none'
+          });
+        }, 1000);
       });
 
       // Get browser window and height
