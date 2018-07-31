@@ -71,11 +71,14 @@
         'z-index': '1000000',
         'pointer-events': 'none'
       });
+
       // When mouse moves, update spotlight position.
       onmousemove = function(e) {
+        var x = e.clientX;
+        var y = e.clientY;
         $('#spot').css({
-          'left': String(e.clientX - 130) + 'px',
-          'top': String(e.clientY - 130) + 'px'
+          'left': String(x - 130) + 'px',
+          'top': String(y - 130) + 'px'
         });
       }
       $('*:not(#spot)').mouseover(function() {
@@ -95,7 +98,7 @@
             'text-shadow': 'none',
             'color': 'black'
           });
-        }, 4000);
+        }, 5000);
       });
     })();
   }
