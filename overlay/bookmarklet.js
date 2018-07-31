@@ -32,20 +32,18 @@
 
       var textTags = 'h1, h2, h3, h4, h5, h6, p, pre, span, a, img';
 
-      $('html').css({
-        'background': 'black'
-      });
-
       $('*:not(body)').css({
         'color': 'black'
       });
 
-      $('body, div').css({
+      $('html, body, div').css({
+        'color': 'black',
         'cursor': 'none',
         'background': 'black',
         'background-color': 'black'
+        'border-color': 'black'
       });
-      
+
       $(textTags).mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
