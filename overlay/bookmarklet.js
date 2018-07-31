@@ -35,9 +35,11 @@
       $('html').css({
         'background': 'black'
       });
+
       $('*:not(body)').css({
         'color': 'black'
       });
+
       $('body').css({
         'cursor': 'none',
         // 'background': 'black',
