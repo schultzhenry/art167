@@ -37,8 +37,7 @@
     (window.bookmarklet = function() {
       console.log('Searchlight is now running.')
       // First, make page dark.
-      var textTags = 'h1, h2, h3, h4, h5, h6,' +
-                     'p, pre, span, a, img';
+      var textTags = 'h1, h2, h3, h4, h5, h6, p, pre, span, a, img';
       $('*').css({
         'color': 'black',
         'background': 'black',
@@ -53,8 +52,7 @@
       });
 
       // Second, create spotlight.
-      // In case of multiple bookmarklet runs,
-      // check for existence of spotlight before
+      // Check for existence of spotlight before
       // appending it to page. Reapply style.
       if (!$('#spot').length) {
         $('body').append('<div id=\'spot\'></div>');

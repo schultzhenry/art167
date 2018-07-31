@@ -15,5 +15,5 @@ $(document).ready(function() {
       'transition-timing-function': 'ease-in-out',
       'filter': 'brightness(1)'
     });
-  }, 2000);
+  }, 1500);
 });
