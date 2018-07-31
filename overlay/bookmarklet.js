@@ -46,6 +46,10 @@
         'background-color': 'transparent'
       });
 
+      $('a').css({
+        'background-color': 'black'
+      })
+
       $(textTags).mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
