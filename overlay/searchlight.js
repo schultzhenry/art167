@@ -91,7 +91,7 @@
             'text-shadow': 'none',
             'color': 'black'
           });
-        }, 3000);
+        }, 4000);
       });
 
       $('img, hr, svg').css({
@@ -102,9 +102,6 @@
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
-          // '-moz-box-shadow': '0 0 80px white',
-          // '-webkit-box-shadow': '0 0 80px white',
-          // 'box-shadow': '0 0 80px white'
         });
       });
       $('img, hr, svg').mouseleave(function() {
@@ -114,7 +111,7 @@
             'transition': 'all 4s',
             'filter': 'brightness(0)'
           });
-        }, 3000);
+        }, 4000);
       });
 
       onmousemove = function(e) {
