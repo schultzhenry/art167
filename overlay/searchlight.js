@@ -35,6 +35,7 @@
   // Searchlight function.
   function initBookmarklet($) {
     (window.bookmarklet = function() {
+      console.log('Searchlight is now running.')
       // First, make page dark.
       var textTags = 'h1, h2, h3, h4, h5, h6,' +
                      'p, pre, span, a, img';
@@ -50,10 +51,6 @@
       $(textTags).css({
         'background-color': 'transparent',
       });
-
-      $('head').append(
-        '<style>.lit {transition:all 0.2s;filter:brightness(1);text-shadow:0 0 12px white,0 0 2px white;color:white;}</style>'
-      );
 
       // Second, create spotlight.
       // In case of multiple bookmarklet runs,
@@ -82,7 +79,12 @@
         });
       }
       $('*:not(#spot)').mouseover(function() {
-        $(this).addClass('lit');
+        $(this).css({
+          'transition': 'all 0.2s',
+          'filter':'brightness(1)',
+          'text-shadow':'0 0 12px white,0 0 2px white',
+          'color':'white'
+        });
       });
       $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
