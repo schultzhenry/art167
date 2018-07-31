@@ -42,13 +42,9 @@
 
       $('body').css({
         'cursor': 'none',
-        // 'background': 'black',
-        'background-color': 'transparent'
-      });
-
-      $('a').css({
+        'background': 'black',
         'background-color': 'black'
-      })
+      });
 
       $(textTags).mouseover(function() {
         $(this).css({
@@ -125,9 +121,6 @@
           'left': String((e.clientX - (260 / 2))) + 'px',
           'top': String((e.clientY - (260 / 2)) + 'px')
         });
-
-        // $('#beam').attr('x2', String(e.clientX) + 'px');
-        // $('#beam').attr('y2', String(e.clientY) + 'px');
       }
     })();
   }

@@ -1,39 +1,155 @@
 * {
-  font-family: sans-serif;
-  text-align: center
+  font-family: 'Garamond', serif;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.top {
-  height: 36px;
+body {
   background: black;
-  color: white;
-  padding: 0.5em;
-  padding-right: 0em;
-  margin-left: 1vw;
-  margin-right: 0px;
+  font-family: 'Garamond', serif;
 }
 
-p {
-  margin-left: 1vw;
-}
-
-a, a:visited {
-  color: white
-}
-img {
-  width: 320px;
-  display: inline;
-}
-
-.img-container {
-  padding: 16px;
-}
-
-#info {
+#dragme, #webring, #toggleButton {
+  text-align: center;
+  position: fixed;
   padding: 0px;
-  width: 90vw;
+  margin: 0px;
+  left: 0px;
+  right: 0px;
 }
 
-#photos {
-  width: 90vw;
+#dragme, #dragme-background {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin:auto;
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
+}
+#dragme {
+  width: 560px;
+  height: 560px;
+}
+
+#dragme-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vmin;
+}
+
+#dragme-background {
+  width: 260px;
+  height: 260px;
+  background-color: grey;
+  filter: blur(64px);
+  border-radius: 50%;
+}
+
+#dragme-text, #dragme-background:hover {
+  cursor: pointer;
+}
+
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  cursor:inherit;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    padding-bottom: 0.3em;
+}
+
+/* Menu dropdown buttons and link buttons */
+.dropbtn, .btn {
+    background-color: transparent;
+    font-family: inherit;
+    border-style: none;
+    font-size: 8vmin;
+    padding: 0px 0px 4px 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  display: block;
+  padding: 1vmin 1.5vmin;
+  text-decoration: none;
+  text-align: right;
+  font-size: 2.5vmin;
+  letter-spacing: 0.04em;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  transition: all 2s linear;
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  cursor:inherit;
+  border-style: none;
+}
+
+.dropdown:hover .btn {
+  cursor:inherit;
+  border-bottom: 1vmin solid black;
+}
+
+
+button:focus {
+  outline: 0;
+}
+
+#webring {
+  background-color: white;
+  bottom: 0px;
+  padding-bottom: 12vmin;
+  padding-top: 2vmin;
+  font-size: 3vmin;
+  z-index: 1000;
+}
+
+.previous:hover, .home:hover, .next:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+  cursor: pointer;
+}
+
+.s:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+.s, .r, .b, .s:hover, .r:hover, .b:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.r:hover {
+  color: red;
+}
+
+.b:hover {
+  filter: blur(3px);
 }
