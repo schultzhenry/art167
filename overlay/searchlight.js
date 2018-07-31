@@ -70,11 +70,14 @@
         });
       });
       $(textTags).mouseleave(function() {
-        $(this).css({
-          'transition': 'all 4s',
-          'text-shadow': 'none',
-          'color': 'black'
-        });
+        var tag = $(this);
+        setTimeout(function() {
+          tag.css({
+            'transition': 'all 4s',
+            'text-shadow': 'none',
+            'color': 'black'
+          });
+        }, 3000);
       });
 
       $('img, hr, svg').css({
