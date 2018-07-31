@@ -42,6 +42,10 @@
         'background-color': 'black'
       });
 
+      if ($('#spot').length) {
+        $('#spot').css(spotStyle);
+      }
+
       $(textTags).mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
@@ -66,9 +70,9 @@
         $(this).css({
           'transition': 'all 0.5s',
           'filter': 'brightness(1)',
-          '-moz-box-shadow': '0 0 80px white',
-          '-webkit-box-shadow': '0 0 80px white',
-          'box-shadow': '0 0 80px white'
+          // '-moz-box-shadow': '0 0 80px white',
+          // '-webkit-box-shadow': '0 0 80px white',
+          // 'box-shadow': '0 0 80px white'
         });
       });
       $('img, hr, svg').mouseleave(function() {
@@ -76,9 +80,9 @@
           'transition': 'all 3s',
         }).delay(1000).css({
           'filter': 'brightness(0)',
-          '-moz-box-shadow': 'none',
-          '-webkit-box-shadow': 'none',
-          'box-shadow': 'none'
+          // '-moz-box-shadow': 'none',
+          // '-webkit-box-shadow': 'none',
+          // 'box-shadow': 'none'
         });
       });
 
