@@ -75,7 +75,7 @@
         $('#spot').css(spotStyle);
       }
 
-      $(textTags).mouseover(function() {
+      $(textTags + '*').mouseover(function() {
         $(this).css({
           'transition': 'all 0.5s',
           'text-shadow': '0px 0px 60px white',
@@ -84,7 +84,7 @@
         });
       });
 
-      $(textTags).mouseleave(function() {
+      $(textTags + '*').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
