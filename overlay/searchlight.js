@@ -78,6 +78,14 @@
         'pointer-events': 'none'
       });
 
+      // When mouse moves, update spotlight position.
+      onmousemove = function(e) {
+        $('#spot').css({
+          'left': String((e.clientX - (260 / 2))) + 'px',
+          'top': String((e.clientY - (260 / 2)) + 'px')
+        });
+      }
+
       // Watch for mouseover.
       $(textTags + '*').mouseover(function() {
         $(this).css({
@@ -114,13 +122,6 @@
           });
         }, 4000);
       });
-
-      onmousemove = function(e) {
-        $('#spot').css({
-          'left': String((e.clientX - (260 / 2))) + 'px',
-          'top': String((e.clientY - (260 / 2)) + 'px')
-        });
-      }
     })();
   }
 })();
