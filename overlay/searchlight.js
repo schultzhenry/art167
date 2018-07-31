@@ -39,7 +39,7 @@
                      ' p, pre, span, a, img';
 
       $('*').css({
-        'color': 'black'
+        'color': 'black',
         'background': 'black',
         'background-color': 'black',
         'border': 'none'
