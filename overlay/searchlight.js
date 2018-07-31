@@ -103,7 +103,7 @@
       //   }, 4000);
       // });
 
-      $('*').mouseover(function() {
+      $('*:not(#spot)').mouseover(function() {
         $(this).css({
           'transition': 'all 0.2s',
           'filter': 'brightness(1)',
@@ -112,7 +112,7 @@
         });
       });
 
-      $('*').mouseleave(function() {
+      $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
