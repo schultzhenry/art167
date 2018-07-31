@@ -43,6 +43,7 @@
         'color': 'black',
         'background': 'black',
         'background-color': 'black',
+        'text-shadow': 'none',
         'border': 'none',
         'cursor': 'none'
       });
