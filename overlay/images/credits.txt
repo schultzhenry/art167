@@ -1,26 +1,4 @@
-1	pokkisam.com/content/concert-photography-40-rocking-examples
-	photographer unknown
 
-2	pokkisam.com/content/concert-photography-40-rocking-examples
-	photographer unknown
-
-3	https://www.morrisonhotelgallery.com/photographs/srPNJM/Blue-Concert-Crowd
-	photographer: Eddie Sung, 2009
-
-4	http://rockontherange.com/toolmusicclinic/
-	photographer unknown
-
-5	https://www.youtube.com/watch?v=_SRM8z_uCHE
-	photographer: YouTube user chrisjesss
-
-6	http://www.jennieallen.com/concert-crowd-hands-raised-bright-lights-2/
-	photographer: Jennie Allen
-
-7	https://www.thoughtco.com/wash-2638709
-	photographer: Marin Tomas/Getty Images
-
-8	https://dissolve.com/video/Crowd-cheering-clapping-night-rock-concert-flashing-royalty-free-stock-video-footage/001-D111-55-010
-	photographer: George Hantzis
 
 
 
@@ -46,3 +24,28 @@ searchlight 13 		https://www.wired.com/2013/09/tribute-in-lights-birds-2/
 17			https://giphy.com/gifs/lights-dcJXEPsSYbGhi
 
 18			https://giphy.com/gifs/grouplove-remember-that-night-3ohhwmQOViMU9vfjdS
+
+
+19	pokkisam.com/content/concert-photography-40-rocking-examples
+	photographer unknown
+
+20	pokkisam.com/content/concert-photography-40-rocking-examples
+	photographer unknown
+
+21	https://www.morrisonhotelgallery.com/photographs/srPNJM/Blue-Concert-Crowd
+	photographer: Eddie Sung, 2009
+
+22	http://rockontherange.com/toolmusicclinic/
+	photographer unknown
+
+23	https://www.youtube.com/watch?v=_SRM8z_uCHE
+	photographer: YouTube user chrisjesss
+
+24	http://www.jennieallen.com/concert-crowd-hands-raised-bright-lights-2/
+	photographer: Jennie Allen
+
+25	https://www.thoughtco.com/wash-2638709
+	photographer: Marin Tomas/Getty Images
+
+26	https://dissolve.com/video/Crowd-cheering-clapping-night-rock-concert-flashing-royalty-free-stock-video-footage/001-D111-55-010
+	photographer: George Hantzis
