@@ -2,11 +2,6 @@
 
 
 
-01spotlight		http://www.debbieneigher.com/
-			unknown
-
-
-
 searchlight1-8 		http://www.candlepowerforums.com/vb/showthread.php?243779-50-inch-Reflector-quot-Monster-Light-quot/page18
 
 searchlight9		http://www.candlepowerforums.com/vb/showthread.php?330425-Cheapest-light-for-cloud-lighting
@@ -49,3 +44,7 @@ searchlight 13 		https://www.wired.com/2013/09/tribute-in-lights-birds-2/
 
 26	https://dissolve.com/video/Crowd-cheering-clapping-night-rock-concert-flashing-royalty-free-stock-video-footage/001-D111-55-010
 	photographer: George Hantzis
+
+
+27	http://www.debbieneigher.com/
+			unknown

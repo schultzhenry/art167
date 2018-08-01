@@ -31,8 +31,7 @@
     (window.bookmarklet = function() {
       console.log('Searchlight is now running.');
 
-      var textTags = 'h1, h2, h3, h4, h5, h6, p, pre, span, a, img';
-
+      // Darken everything on the page.
       $('*').css({
         'color':'black',
         'background':'black',
@@ -43,12 +42,25 @@
         'cursor':'none'
       });
 
+      // For common text tags, keep backgrounds
+      // transparent as they may overlap with
+      // other elements.
+      var textTags = 'h1, h2, h3, h4, h5, h6' +
+                     'p, pre, span, a, img';
+
       $(textTags).css({
         'background-color': 'transparent',
+        'text-stroke': 'none',
       });
 
+      console.log('Stage set.');
+
+      // Only add the spotlight to the page if
+      // it is not already there. Reapply style
+      // in either case.
       if (!$('#spot').length) {
-        $('body').append('<div id=\'spot\'></div>')
+        $('body').append('<div id=\'spot\'></div>');
+        console.log('Spotlight added to page.');
       };
 
       $('#spot').css({
@@ -64,15 +76,16 @@
         'pointer-events':'none'
       });
 
+      // Listen for mouse movement, adjusting
+      // spotlight's coordinates to follow it.
       onmousemove = function(e) {
-        var x = e.clientX;
-        var y = e.clientY;
         $('#spot').css({
-          'left': String(x - 130) + 'px',
-          'top': String(y - 130) + 'px'
+          'left': String(e.clientX - 130) + 'px',
+          'top': String(e.clientY - 130) + 'px'
         });
       };
 
+      // Brighten any element on mouseover.
       $('*:not(#spot)').mouseover(function() {
         $(this).css({
           'transition':'all 0.1s',
@@ -82,6 +95,8 @@
         })
       });
 
+      // 5 seconds after mouseleave, darken
+      // element again.
       $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
