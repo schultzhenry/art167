@@ -107,3 +107,7 @@ button:focus {
   font-size: 3.5vmin;
   line-height: 1.7em;
 }
+
+#noLine {
+  text-decoration: none;
+}
