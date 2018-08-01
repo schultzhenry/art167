@@ -86,9 +86,10 @@ button:focus {
   bottom: 0px;
   margin-bottom: 12vmin;
   margin-top: 2vmin;
-  font-size: 2vmin;
+  font-size: 1.8vmin;
   z-index: 1000;
-  line-height: 1.8em;
+  font-size: 2vmin;
+  line-height: 1.3em;
 }
 
 .smallLink:link, .smallLink:visited {
@@ -104,4 +105,5 @@ button:focus {
 
 #drag-description {
   font-size: 3.5vmin;
+  line-height: 1.7em;
 }
