@@ -32,10 +32,6 @@
 
       $('body').css({'cursor': 'none'});
 
-      // Get initial browser dimensions
-      w = $(window).width()
-      h = $(window).height()
-
       // Create jumbotron and apply style
       var jumbotron = '<div id=\'jumbotron\'></div>';
       var jumbotronFraction = 6;
@@ -67,17 +63,6 @@
       $('body').append(tinyCursor);
       $('#tinyCursor').css(tinyCursorStyle);
 
-      // Adjust jumbotron on window adjust
-      // window.onresize = function(event) {
-      //   w = $(window).width()
-      //   h = $(window).height()
-      //   jumbotronWidth = w / jumbotronFraction;
-      //   jumbotronHeight = h / jumbotronFraction;
-      //   $('#jumbotron').css({
-      //     'width': String(jumbotronWidth) + 'px',
-      //     'height': String(jumbotronHeight) + 'px'
-      //   });
-      // };
       // Adjust tinyCursor when mouse moves
       onmousemove = function(e) {
         // console.log('mouse location:', e.clientX, e.clientY)
