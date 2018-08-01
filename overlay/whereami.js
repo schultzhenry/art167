@@ -34,7 +34,6 @@
 
       // Create jumbotron and apply style
       var jumbotron = '<div id=\'jumbotron\'></div>';
-      var jumbotronFraction = 6;
       var jumbotronStyle = {
         'border': '1px solid white',
         'z-index': '1000000000',
@@ -67,8 +66,8 @@
       onmousemove = function(e) {
         // console.log('mouse location:', e.clientX, e.clientY)
         $('#tinyCursor').css({
-          'left': String((e.clientX / jumbotronFraction) + 6) + 'px',
-          'bottom': String(((h - e.clientY) / jumbotronFraction) + 6) + 'px'
+          'left': String((e.clientX / 6) + 6) + 'px',
+          'bottom': String((($(window).height() - e.clientY) / 6) + 6) + 'px'
         });
       };
     })();
