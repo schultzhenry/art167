@@ -82,7 +82,7 @@
       onmousemove = function(e) {
         // console.log('mouse location:', e.clientX, e.clientY)
         $('#tinyCursor').css({
-          'bottom': String((e.clientX / jumbotronFraction) + 6) + 'px',
+          'left': String((e.clientX / jumbotronFraction) + 6) + 'px',
           'bottom': String(((h - e.clientY) / jumbotronFraction) + 6) + 'px'
         });
       };
