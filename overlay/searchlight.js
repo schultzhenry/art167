@@ -29,7 +29,7 @@
 
   function initBookmarklet($) {
     (window.bookmarklet = function() {
-      console.log('Searchlight is now running.');
+      console.log('Searchlight is setting up...');
 
       // Darken everything on the page.
       $('*').css({
@@ -50,17 +50,17 @@
 
       $(textTags).css({
         'background-color': 'transparent',
-        'text-stroke': 'none',
+        '-webkit-text-stroke': 'none',
       });
 
-      console.log('Stage set.');
+      console.log('Stage set...');
 
       // Only add the spotlight to the page if
       // it is not already there. Reapply style
       // in either case.
       if (!$('#spot').length) {
         $('body').append('<div id=\'spot\'></div>');
-        console.log('Spotlight added to page.');
+        console.log('Ready!');
       };
 
       $('#spot').css({
