@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>About</title>
+    <meta charset="utf-8"/>
+    <title>NSH/interactive/about</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
     <link rel="icon" type="image/png" href="favicons/red.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
-    <h1>About</h1>
-    <p>This is Natalie's website for Intro to Interactive Design, Summer 2018.</p>
-    <hr>
-    <a href="index.html">Back</a>
+    <div id="main">
+        <p>This is Natalie Schultz-Henry's website for Intro to Interactive Design, taught at Yale in the summer of 2018 by Matt Wolff.</p>
+    </div>
+    <div id="webring">
+      <a href="https://candacechung.github.io/summer2018-yale/" class="previous">↜</a>
+      <a href="http://summer2018-yale.matt-wolff.com/people" class="home"> HOME </a>
+      <a href="https://miajackson.github.io/summer2018-interactive/" class="next">↝</a>
+    </div>
+    <div id="toggleButton">
+      <!-- https://www.w3schools.com/howto/howto_js_toggle_class.asp -->
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
   </body>
 </html>

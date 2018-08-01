@@ -37,4 +37,12 @@ searchlight 10 		https://www.youtube.com/watch?v=WH6i1pMyZsU
 
 searchlight11 		https://www.videoblocks.com/video/4-head-searchlights-shining-beams-of-light-into-a-night-sky-full-of-stars-gzjgnow
 
+searchlight 13 		https://www.wired.com/2013/09/tribute-in-lights-birds-2/
 
+15			https://giphy.com/gifs/tormiller-tor-miller-glassnote-music-3o6gDRh6CV3wYhaAzS
+
+16			https://giphy.com/gifs/speed-of-light-dlmvQbhQIZLxK
+
+17			https://giphy.com/gifs/lights-dcJXEPsSYbGhi
+
+18			https://giphy.com/gifs/grouplove-remember-that-night-3ohhwmQOViMU9vfjdS
