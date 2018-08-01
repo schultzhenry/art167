@@ -39,7 +39,6 @@ a {
   position: relative;
   left: -26px;
   bottom: 8px;
-  text-shadow: 0 0 2px white;
 }
 a:link, a:visited {
   color: white;
@@ -48,7 +47,7 @@ a:link, a:visited {
 }
 
 a:hover {
-  text-stroke: 3px solid white;
+  color: red;
 }
 
 button:focus {
