@@ -27,7 +27,6 @@
     initBookmarklet(window.jQuery);
   }
 
-  // My bookmarklet function
   function initBookmarklet($) {
     (window.bookmarklet = function() {
 
@@ -45,10 +44,10 @@
         'z-index': '1000000000',
         'background-color': 'black',
         'position': 'fixed',
-        'bottom': '4px',
-        'left': '4px',
-        'width': String(w / jumbotronFraction),
-        'height': String(h / jumbotronFraction)
+        'bottom': '6px',
+        'left': '6px',
+        'width': 'calc(100vw / 6)',
+        'height': 'calc(100vh / 6)'
       }
       $('body').append(jumbotron);
       $('#jumbotron').css(jumbotronStyle);
@@ -69,22 +68,22 @@
       $('#tinyCursor').css(tinyCursorStyle);
 
       // Adjust jumbotron on window adjust
-      window.onresize = function(event) {
-        w = $(window).width()
-        h = $(window).height()
-        jumbotronWidth = w / jumbotronFraction;
-        jumbotronHeight = h / jumbotronFraction;
-        $('#jumbotron').css({
-          'width': String(jumbotronWidth) + 'px',
-          'height': String(jumbotronHeight) + 'px'
-        });
-      };
+      // window.onresize = function(event) {
+      //   w = $(window).width()
+      //   h = $(window).height()
+      //   jumbotronWidth = w / jumbotronFraction;
+      //   jumbotronHeight = h / jumbotronFraction;
+      //   $('#jumbotron').css({
+      //     'width': String(jumbotronWidth) + 'px',
+      //     'height': String(jumbotronHeight) + 'px'
+      //   });
+      // };
       // Adjust tinyCursor when mouse moves
       onmousemove = function(e) {
         // console.log('mouse location:', e.clientX, e.clientY)
         $('#tinyCursor').css({
-          'bottom': String((e.clientX / jumbotronFraction) + 3) + 'px',
-          'bottom': String(((h - e.clientY) / jumbotronFraction) + 3) + 'px'
+          'bottom': String((e.clientX / jumbotronFraction) + 6) + 'px',
+          'bottom': String(((h - e.clientY) / jumbotronFraction) + 6) + 'px'
         });
       };
     })();
