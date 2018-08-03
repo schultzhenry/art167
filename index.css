@@ -41,6 +41,10 @@ a:link, a:visited {
   cursor:inherit;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
