@@ -6,17 +6,19 @@ body {
   margin: 2vh;
 }
 
-.drawing {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  height: 50vh;
+img:not(#instructions) {
+  border: 1px solid black;
+  visibility: hidden;
+  position: absolute;
+  bottom: 110vh;
+  width: 10vw;
+  height: auto
 }
 
 #instructions {
   display: block;
   width: 720px;
-  outline: dashed 2px black;
+  outline: solid 1px black;
   margin: auto;
 }
 
@@ -35,12 +37,12 @@ a {
   text-decoration: none;
   padding: 1em;
   color: black;
-  outline: dashed 2px white;
+  outline: dashed 1px white;
 }
 
 a:hover {
   background-color: white;
-  outline: dashed 2px black;
+  outline: solid 1px black;
   transition-timing-function: ease-in;
   transition: background-color 0.5s, outline 0.5s;
   transition-delay: outline 0.5s;
