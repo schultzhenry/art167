@@ -25,7 +25,7 @@ $(document).ready(function() {
     setTimeout(function() {
       $('#d' + String(i)).css({
         'transition': 'bottom 2s',
-        'bottom': String(ypos) + 'px'
+        'bottom': 'calc(' + String(ypos) + 'px' + ' + ' + '12vh' + ')'
       });
     }, time);
     time += 500;
