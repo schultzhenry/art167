@@ -6,23 +6,33 @@
     <link rel="stylesheet" type="text/css" href="about.css">
     <link rel="icon" type="image/png" href="favicons/red.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          $('#main').css({
+            'transition': 'all 1s',
+            'color': 'black'
+          });
+        }, 200);
+        setTimeout(function() {
+          $('a:link, a:visited').css({
+            'transition': 'all 1s',
+            'color': 'black'
+          });
+        }, 800);
+      });
+    </script>
   </head>
   <body>
     <div id="main">
-        <p>This is Natalie Schultz-Henry's website for Intro to Interactive Design, taught at Yale in the summer of 2018 by Matt Wolff.</p>
+        <p>
+          This is Natalie Schultz-Henry's website
+          for Intro to Interactive Design, taught
+          at Yale in the summer of 2018 by Matt Wolff.
+        </p>
     </div>
     <div id="webring">
-      <a href="https://candacechung.github.io/summer2018-yale/" class="previous">↜</a>
-      <a href="http://summer2018-yale.matt-wolff.com/people" class="home"> HOME </a>
-      <a href="https://miajackson.github.io/summer2018-interactive/" class="next">↝</a>
-    </div>
-    <div id="toggleButton">
-      <!-- https://www.w3schools.com/howto/howto_js_toggle_class.asp -->
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider"></span>
-      </label>
+      <a href="index.html" class="back">↜</a>
     </div>
   </body>
 </html>

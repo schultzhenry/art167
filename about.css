@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-#main, #webring, #toggleButton {
+#main, #webring {
   text-align: center;
   position: fixed;
   padding: 0px;
@@ -15,6 +15,7 @@
 }
 
 #main {
+  color: white;
   font-size: 4vmin;
   position: relative;
   padding-left: 24vw;
@@ -23,34 +24,9 @@
 }
 
 a:link, a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
   cursor:inherit;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
-    padding-bottom: 0.3em;
-}
-
-/* Menu dropdown buttons and link buttons */
-.dropbtn, .btn {
-    background-color: transparent;
-    font-family: inherit;
-    border-style: none;
-    font-size: 8vmin;
-    padding: 0px 0px 4px 4px;
-}
-
-.dropdown-content {
-  display: none;
-  position: relative;
-  width: 100%;
-  z-index: 1;
 }
 
 button:focus {
@@ -66,84 +42,8 @@ button:focus {
   z-index: 1000;
 }
 
-.previous:hover, .home:hover, .next:hover {
+.back:hover {
   transition: all 0.5s;
   text-shadow: 0 0 2px black;
   cursor: pointer;
-}
-
-#toggleButton {
-  font-size: 3vmin;
-  position: fixed;
-  bottom: 7vmin;
-  width: 100vw;
-  z-index: 1001;
-  margin: auto;
-}
-
-#toggleButton:hover {
-  cursor: pointer;
-}
-.s:hover {
-  color: transparent;
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
-}
-.s, .r, .b, .s:hover, .r:hover, .b:hover {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.r:hover {
-  color: red;
-}
-
-.b:hover {
-  filter: blur(3px);
-}
-
-.switch {
-  position: fixed;
-  display: block;
-  width: 6vmin;
-  height: 0vmin;
-  z-index: 1002;
-  border: 1px solid black;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  left: 0.1vmin;
-  bottom: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.6vmin;
-  width: 1.6vmin;
-  bottom: 0vmin;
-  border: 1px solid black;
-  -webkit-transition: .4s;
-  transition: .4s;
-  border-radius: 50%;
-  z-index: 1002;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(3.5vmin);
-  -ms-transform: translateX(3.5vmin);
-  transform: translateX(3.5vmin);
 }
