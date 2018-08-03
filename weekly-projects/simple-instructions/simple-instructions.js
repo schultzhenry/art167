@@ -18,6 +18,10 @@ $(document).ready(function() {
       'left': String(xpos) + 'px',
       'visibility': 'visible'
     });
+
+    // Wait a half second before dropping
+    // each drawing to its final position
+    // on the page.
     setTimeout(function() {
       $('#d' + String(i)).css({
         'transition': 'bottom 2s',
@@ -27,10 +31,7 @@ $(document).ready(function() {
     time += 500;
   };
 
-  $('.d').css({
-    'cursor':'move'
-  });
-
+  // Make each drawing draggable.
   $(function() {
     $( ".d" ).draggable({
       appendTo: "body"
