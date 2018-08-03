@@ -1,5 +1,3 @@
-/* FRAME */
-
 body {
 	background: black;
 }
@@ -16,10 +14,10 @@ body {
 #mat {
 	border-bottom: 300px solid white;
 	border-left: 80px solid transparent;
-	border-right: 56px solid transparent;
+	border-right: 76px solid transparent;
 	height: 160px;
 	width: 720px;
-  transform: rotate(-7deg);
+  transform: rotate(-6deg);
 }
 
 #orange-roll {
@@ -45,11 +43,12 @@ body {
 #bottle {
   background: SeaGreen;
   opacity: 0.6;
-  top: 2px;
+  top: 0px;
   left: 460px;
   width: 96px;
-  height: 354px;
+  height: 358px;
 	transform: perspective(400px) rotateX(20deg);
+	border-radius: 50% / 2%;
 }
 
 .jar {
@@ -209,6 +208,7 @@ body {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 }
+
 #stick-bottom {
 	background: DarkBlue;
 	top: 42px;
@@ -254,7 +254,7 @@ body {
 #orange-roll-right {
 	top: 163px;
 	left: 763px;
-	width: 67px;
+	width: 66px;
 	height: 67px;
 	background: OrangeRed;
 	-moz-border-radius: 50%;
