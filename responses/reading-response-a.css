@@ -46,25 +46,26 @@ mark {
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 580px) {
   #text-container {
     padding-bottom: 1em;
-    width: 530px;
+    width: 100%;
   }
   #response-container {
     padding-bottom: 1em;
-    width: 530px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 420px) {
   #text-container {
+    display: block;
     padding-bottom: 1em;
-    width: 100%;
+    width: 530px;
   }
   #response-container {
     padding-bottom: 1em;
-    width: 100%;
+    width: 530px;
   }
 }
 

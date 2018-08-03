@@ -28,7 +28,7 @@
 }
 
 #menu {
-  font-size: 4vmin;
+  font-size: 8vmin;
   position: relative;
   padding-left: 14vw;
   padding-right: 14vw;
@@ -76,7 +76,7 @@ a:hover {
   display: block;
   padding: 1vmin 1.5vmin;
   text-decoration: none;
-  text-align: right;
+  text-align: left;
   font-size: 2.5vmin;
   letter-spacing: 0.04em;
 }
