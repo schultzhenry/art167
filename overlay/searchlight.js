@@ -90,7 +90,7 @@
         $(this).css({
           'transition':'all 0.1s',
           'filter':'brightness(1)',
-          'text-shadow':'0 0 12px white,0 0 2px white',
+          // 'text-shadow':'0 0 12px white,0 0 2px white',
           'color':'white'
         })
       });
