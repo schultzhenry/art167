@@ -18,7 +18,8 @@
       }
     };
     document.getElementsByTagName('head')[0].appendChild(script);
-    if (window.jQuery === undefined || window.jQuery.fn.jquery < version) {
+    if (window.jQuery === undefined ||
+        window.jQuery.fn.jquery < version) {
       console.log(':::')
     } else {
     console.log('jquery loaded')
