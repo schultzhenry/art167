@@ -37,7 +37,7 @@ body {
   background-color: transparent;
   position: absolute;
   left: 0;
-  right: 56px;
+  right: 100vw;
   bottom: 0;
 }
 

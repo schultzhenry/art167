@@ -1,3 +1,8 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 #everything {
   width: 100%;
   height:100%;
@@ -43,8 +48,8 @@
 #rest-of-title {
   top:112px;
 }
+
 #page-links, a {
-  top: 196px;
   font-family: monospace;
   color: white;
 }
@@ -73,4 +78,11 @@
   right: 0px;
   height:100%;
   width:35%;
+}
+
+#links {
+  padding: 0px;
+  position: fixed;
+  left: 9px;
+  bottom: 18px;
 }
