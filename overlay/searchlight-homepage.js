@@ -17,6 +17,21 @@ $(document).ready(function() {
     });
   }, 1500);
 
-  var searchlight = []
-  $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).text='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/searchlight.js';})();")
+  $("#dragme").attr("href", "javascript:(function()" +
+                    "{document.head.appendChild" +
+                    "(document.createElement('script'))" +
+                    ".src='searchlight.js';})();");
+
+  $(document).on('input', '#light', function() {
+    var light = $(this).val();
+    var timer = $('#timer').val();
+
+    console.log("brightness changed to " + String(light));
+    console.log("timer set to " + String(timer));
+
+    if (light == 1) && (timer == 1) {
+      $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-light1-timer1.js';})();");
+      console.log("lowest brightness loaded");
+    }
+  });
 });

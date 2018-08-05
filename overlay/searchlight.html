@@ -10,7 +10,23 @@
   </head>
   <body>
     <div id="top-content">
-      <span id="drag-description">Drag the light below into your bookmarks bar.</span>
+    </div>
+    <a id="dragme" alt="bookmarklet" href="#">
+      <div id="dragme-background"></div>
+      <span id="dragme-text">searchlight</span>
+    </a>
+    <div id="bottom-links">
+      <div id="slider-block">
+        <div class="slider-container" id="light-slider">
+          <input type="range" min="1" max="3" value="2" class="slider" id="light">
+          <span id="light-label">light</span>
+        </div>
+        <div class="slider-container" id="delay-slider">
+          <input type="range" min="1" max="3" value="2" class="slider" id="timer">
+          <span id="timer-label">timer</span>
+        </div>
+      </div>
+      <span id="drag-description">Drag the light above into your bookmarks bar.</span>
       <br />
       <span>Then, on any webpage, click on it. Try it </span>
       <a href="https://www.are.na/" class="smallLink">here</a><span>,</span>
@@ -21,21 +37,6 @@
       <span>or see the project's </span>
       <a href="https://github.com/schultzhenry/summer2018-yale-interactive/blob/master/overlay/searchlight.js" class="smallLink">code</a><span> & </span>
       <a href="collection.html" class="smallLink">collection</a><span>.</span>
-    </div>
-    <a id="dragme" alt="bookmarklet" href="#">
-      <div id="dragme-background"></div>
-      <span id="dragme-text">searchlight</span>
-    </a>
-    <div id="bottom-links">
-      <input type="range" min="0" max="10" value="5" class="slider" id="brightness">
-      <input type="range" min="0" max="10" value="5" class="slider" id="delay">
-      <br />
-      <br />
-      <datalist id="tickmarks">
-        <option value="1">
-        <option value="2">
-        <option value="3">
-      </datalist>
       <a href="https://schultzhenry.github.io/summer2018-yale-interactive/index.html" class="smallLink" id="noLine">&#x2302;</a>
     </div>
   </body>
