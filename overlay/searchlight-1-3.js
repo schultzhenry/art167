@@ -65,6 +65,7 @@
           'filter':'brightness(1)',
           'color':'white'
         })
+        console.log('brightening');
       });
 
       // 5 seconds after mouseleave, darken
