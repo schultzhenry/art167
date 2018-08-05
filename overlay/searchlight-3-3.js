@@ -1,5 +1,5 @@
-// searchlight version 3-1:
-// large spotlight with no delay
+// searchlight version 3-2:
+// large spotlight with 8-second delay
 
 (function() {
   var version = '1.10.2';
@@ -110,7 +110,7 @@
             'text-shadow':'none',
             'color':'black'
           });
-        }, 0);
+        }, 8000);
       });
     })()
   }
