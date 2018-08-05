@@ -139,7 +139,7 @@ button:focus {
 }
 .s, .r, .b, .s:hover, .r:hover, .b:hover {
   -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  transition: all 0.2s
 }
 .r:hover {
   color: red;

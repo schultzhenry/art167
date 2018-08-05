@@ -16,4 +16,7 @@ $(document).ready(function() {
       'filter': 'brightness(1)'
     });
   }, 1500);
+
+  var searchlight = []
+  $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).text='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/searchlight.js';})();")
 });
