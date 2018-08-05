@@ -1,13 +1,10 @@
 * {
-  font-family: sans-serif;
+  font-family: 'Garamond', serif;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-#top-content {
-  text-align: center;
-}
 body {
   background: black;
   color: white;
@@ -147,7 +144,7 @@ button:focus {
 }
 .slider-container {
   display: inline-block;
-  font-size: 1.5vmin;
+  font-size: 1.7vmin;
 }
 
 #light-label {
