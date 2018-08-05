@@ -1,3 +1,6 @@
+// searchlight version 1-2:
+// cursor with 2-second delay
+
 (function() {
   var version = '1.10.2';
   if (window.jQuery === undefined ||

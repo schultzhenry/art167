@@ -27,12 +27,10 @@ $(document).ready(function() {
     var timer = $('#timer').val();
     console.log("light: " + String(light) + "\t timer: " + String(timer));
 
-    if (light == 1 && timer == 1) {
-      $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-1-1.js';})();");
-      console.log("linking to searchlight-1-1.js");
-    } else if (light == 1 && timer == 2) {
-      $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-1-2.js';})();");
-      console.log("linking to searchlight-1-2.js");
-    }
+    $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-" +
+    String(light) + "-" +
+    String(timer) + ".js';})();");
+
+    console.log("linking to searchlight-"+ String(light) + "-" + String(timer) + ".js");
   });
 });

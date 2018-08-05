@@ -1,3 +1,6 @@
+// searchlight version 1-3:
+// cursor with 8-second delay
+
 (function() {
   var version = '1.10.2';
   if (window.jQuery === undefined ||
@@ -40,7 +43,6 @@
         'filter':'brightness(0.0)',
         'text-shadow':'none',
         'border':'none',
-        'cursor':'none'
       });
 
       // For common text tags, keep backgrounds
@@ -55,36 +57,6 @@
       });
 
       console.log('Stage set...');
-
-      // Only add the spotlight to the page if
-      // it is not already there. Reapply style
-      // in either case.
-      if (!$('#spot').length) {
-        $('body').append('<div id=\'spot\'></div>');
-        console.log('Ready!');
-      };
-
-      $('#spot').css({
-        'position':'fixed',
-        'top':'0px',
-        'left':'0px',
-        'width':'260px',
-        'height':'260px',
-        'background-color':'white',
-        'filter':'blur(30px)',
-        'border-radius':'50%',
-        'z-index':'1000000',
-        'pointer-events':'none'
-      });
-
-      // Listen for mouse movement, adjusting
-      // spotlight's coordinates to follow it.
-      onmousemove = function(e) {
-        $('#spot').css({
-          'left': String(e.clientX - 130) + 'px',
-          'top': String(e.clientY - 130) + 'px'
-        });
-      };
 
       // Brighten any element on mouseover.
       $('*:not(#spot)').mouseover(function() {
@@ -107,7 +79,7 @@
             'text-shadow':'none',
             'color':'black'
           });
-        }, 0);
+        }, 8000);
       });
     })()
   }
