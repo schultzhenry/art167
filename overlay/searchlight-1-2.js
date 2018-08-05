@@ -35,7 +35,6 @@
     (window.bookmarklet = function() {
       console.log('Searchlight is setting up...');
 
-      // Darken everything on the page.
       $('*').css({
         'color':'black',
         'background':'black',
@@ -45,9 +44,6 @@
         'border':'none',
       });
 
-      // For common text tags, keep backgrounds
-      // transparent as they may overlap with
-      // other elements.
       var textTags = 'h1, h2, h3, h4, h5, h6' +
                      'p, pre, span, a, img';
 
@@ -58,7 +54,6 @@
 
       console.log('Ready!');
 
-      // Brighten any element on mouseover.
       $('*').mouseover(function() {
         $(this).css({
           'transition':'all 0.1s',
@@ -67,8 +62,6 @@
         })
       });
 
-      // 5 seconds after mouseleave, darken
-      // element again.
       $('*').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {

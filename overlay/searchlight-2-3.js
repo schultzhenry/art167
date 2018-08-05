@@ -1,5 +1,5 @@
-// searchlight version 1-1:
-// cursor with no delay
+// searchlight version 2-3:
+// medium spotlight with 8-second delay
 
 (function() {
   var version = '1.10.2';
@@ -42,6 +42,7 @@
         'filter':'brightness(0.0)',
         'text-shadow':'none',
         'border':'none',
+        'cursor':'none'
       });
 
       var textTags = 'h1, h2, h3, h4, h5, h6' +
@@ -52,17 +53,43 @@
         '-webkit-text-stroke': 'none',
       });
 
-      console.log('Ready!');
+      console.log('Stage set...');
 
-      $('*').mouseover(function() {
+      if (!$('#spot').length) {
+        $('body').append('<div id=\'spot\'></div>');
+        console.log('Ready!');
+      };
+
+      $('#spot').css({
+        'position':'fixed',
+        'top':'0px',
+        'left':'0px',
+        'width':'180px',
+        'height':'180px',
+        'background-color':'white',
+        'filter':'blur(30px)',
+        'border-radius':'50%',
+        'z-index':'1000000',
+        'pointer-events':'none',
+        'opacity':'0.6',
+      });
+
+      onmousemove = function(e) {
+        $('#spot').css({
+          'left': String(e.clientX - 90) + 'px',
+          'top': String(e.clientY - 90) + 'px'
+        });
+      };
+
+      $('*:not(#spot)').mouseover(function() {
         $(this).css({
           'transition':'all 0.1s',
           'filter':'brightness(1)',
           'color':'white'
-        });
+        })
       });
 
-      $('*').mouseleave(function() {
+      $('*:not(#spot)').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
@@ -71,7 +98,7 @@
             'text-shadow':'none',
             'color':'black'
           });
-        }, 0);
+        }, 8000);
       });
     })()
   }
