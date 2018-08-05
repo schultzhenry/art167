@@ -25,8 +25,6 @@ $(document).ready(function() {
   $(document).on('input', '#light, #timer', function() {
     var light = $('#light').val();
     var timer = $('#timer').val();
-    console.log("light: " + String(light) + "\t timer: " + String(timer));
-
     $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/searchlight-" +
     String(light) + "-" +
     String(timer) + ".js';})();");
