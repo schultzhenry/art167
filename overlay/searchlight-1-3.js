@@ -59,18 +59,17 @@
       console.log('Stage set...');
 
       // Brighten any element on mouseover.
-      $('*:not(#spot)').mouseover(function() {
+      $('*').mouseover(function() {
         $(this).css({
           'transition':'all 0.1s',
           'filter':'brightness(1)',
-          // 'text-shadow':'0 0 12px white,0 0 2px white',
           'color':'white'
         })
       });
 
       // 5 seconds after mouseleave, darken
       // element again.
-      $('*:not(#spot)').mouseleave(function() {
+      $('*').mouseleave(function() {
         var tag = $(this);
         setTimeout(function() {
           tag.css({
