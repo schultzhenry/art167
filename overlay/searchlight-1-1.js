@@ -1,3 +1,6 @@
+// searchlight version 1-1:
+// cursor with no delay
+
 (function() {
   var version = '1.10.2';
   if (window.jQuery === undefined ||
@@ -62,7 +65,6 @@
           'filter':'brightness(1)',
           'color':'white'
         });
-        console.log('brightening');
       });
 
       // 5 seconds after mouseleave, darken

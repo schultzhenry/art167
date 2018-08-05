@@ -56,7 +56,7 @@
         '-webkit-text-stroke': 'none',
       });
 
-      console.log('Stage set...');
+      console.log('Ready!');
 
       // Brighten any element on mouseover.
       $('*').mouseover(function() {
@@ -65,7 +65,6 @@
           'filter':'brightness(1)',
           'color':'white'
         })
-        console.log('brightening');
       });
 
       // 5 seconds after mouseleave, darken

@@ -56,7 +56,7 @@
         '-webkit-text-stroke': 'none',
       });
 
-      console.log('Stage set...');
+      console.log('Ready!');
 
       // Brighten any element on mouseover.
       $('*').mouseover(function() {

@@ -1,3 +1,6 @@
+// searchlight version 2-1:
+// medium spotlight with no delay
+
 (function() {
   var version = '1.10.2';
   if (window.jQuery === undefined ||
@@ -92,7 +95,6 @@
         $(this).css({
           'transition':'all 0.1s',
           'filter':'brightness(1)',
-          // 'text-shadow':'0 0 12px white,0 0 2px white',
           'color':'white'
         })
       });
