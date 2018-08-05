@@ -12,11 +12,14 @@ $(document).ready(function() {
     );
     $('#d' + String(i)).addClass('d');
     $('#d' + String(i)).addClass('ui-widget-content');
-    let xpos = Math.floor(Math.random()*($(window).width()*0.20));
-    let ypos = Math.floor(Math.random()*($(window).height()*0.50));
+    let xpos = Math.floor(Math.random()*20);
+    let ypos = Math.floor(Math.random()*60);
+    let rot = Math.floor(Math.random()*90);
+
     $('#d' + String(i)).css({
-      'left': String(xpos) + 'px',
-      'visibility': 'visible'
+      'left': String(xpos) + 'vw',
+      'visibility': 'visible',
+      'transform':'rotate('+String(rot)+'deg)'
     });
 
     // Wait a half second before dropping
@@ -24,8 +27,8 @@ $(document).ready(function() {
     // on the page.
     setTimeout(function() {
       $('#d' + String(i)).css({
-        'transition': 'bottom 2s',
-        'bottom': 'calc(' + String(ypos) + 'px' + ' + ' + '12vh' + ')'
+        'transition':'bottom 2s',
+        'bottom':'Calc('+String(ypos)+'vh + 12vh)'
       });
     }, time);
     time += 500;
