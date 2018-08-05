@@ -20,7 +20,7 @@ $(document).ready(function() {
   $("#dragme").attr("href", "javascript:(function()" +
                     "{document.head.appendChild" +
                     "(document.createElement('script'))" +
-                    ".src='searchlight-2-2.js';})();");
+                    ".src='https://schultzhenry.github.io/summer2018-yale-interactive/overlay/searchlight-2-2.js';})();");
 
   $(document).on('input', '#light, #timer', function() {
     var light = $('#light').val();

@@ -106,10 +106,6 @@ button:focus {
   line-height: 1.7em;
 }
 
-#noLine {
-  text-decoration: none;
-}
-
 .slider {
     -webkit-appearance: none;
     width: 3vmin;
