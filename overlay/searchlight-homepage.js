@@ -29,6 +29,7 @@ $(document).ready(function() {
     String(light) + "-" +
     String(timer) + ".js';})();");
 
-    console.log("linking to searchlight-"+ String(light) + "-" + String(timer) + ".js");
+    console.log("linking to searchlight-" + String(light) + "-" + String(timer) + ".js");
+    $('#dragme-text').text("searchlight" + String(light) + ":" + String(timer));
   });
 });
