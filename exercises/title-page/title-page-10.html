@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>Title Page 10</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="styles/title-page-10.css" />
+    <title>Title Page 10</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/title-page-10.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Bell Gothic";
+        src: url("styles/bell-gothic-std/BellGothicStd-Bold.otf")
+       }
+   </style>
+   <script>
+     onmousemove = function(e) {
+       $('#cursor').css({
+         'left': String(e.clientX - 400) + 'px',
+         'top': String(e.clientY - 400) + 'px'
+       });
+     };
+   </script>
   </head>
   <body>
-    <h2>PROVOKING</h2>
-    <h1>MAGIC</h1>
-    <h3>LIGHTING OF</h3>
-    <h2>INGO MAURER</h2>
-    <br />
+    <div id="top">
+      <p id="title">
+        <a href="https://www.cooperhewitt.org/publications/provoking-magic/">
+        PROVOKING MAGIC:<br />
+        LIGHTING OF INGO MAURER
+        </a>
+        <br />
+        <br />
+      </p>
+      <p id="contributors">
+        <a href="https://twitter.com/kimpaper?lang=en">Kim Hastreiter</a><br />
+        <a href="https://twitter.com/jiovine?lang=en">Julie V. Iovine</a><br />
+        <a href="https://twitter.com/ingo_maurer?lang=en">Claude Maurer<br />
+        Ingo Maurer</a><br />
+      </p>
+    </div>
+  <div id="bottom">
     <p>
-      Kim Hastreiter   Julie V. Iovine   Claude Maurer   Ingo Maurer
-    </p>
-    <br />
-    <br />
-    <img src="smithsonian.svg" width="32px"/>
-    <p>
-      Smithsonian
-    </p>
-    <p>
-      <i>Cooper-Hewitt, National Design Museum</i>
-    </p>
-  </body>
 
+      <a href="https://www.cooperhewitt.org/"><i>Cooper-Hewitt<br />
+      Smithsonian Design Museum</i></a>
+    </p>
+  </div>
+  <div id="cursor"></div>
+  </body>
 </html>

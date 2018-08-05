@@ -1,3 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bell Gothic';
+  cursor: crosshair;
+}
+
 body {
-  background-color: ;
+  background-color: DarkSlateBlue;
+  color: white;
+  font-size: 8.3vmin;
+}
+
+#top {
+  position: fixed;
+  top: 0.7vmin;
+  left: 0.7vmin;
+  z-index: 1000;
+}
+
+#title a {
+  letter-spacing: -0.5vmin;
+  z-index: 1000;
+}
+#contributors {
+  font-size: 5vmin;
+  z-index: 1000;
+}
+#bottom {
+  position: fixed;
+  bottom: 0vmin;
+  left: 0.7vmin;
+  font-size: 5vmin;
+  z-index: 1000;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+#cursor {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  background-color:red;
+  filter:blur(300px);
+  border-radius:50%;
+  pointer-events:none;
+  opacity: 0.7;
 }
