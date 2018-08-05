@@ -22,16 +22,17 @@ $(document).ready(function() {
                     "(document.createElement('script'))" +
                     ".src='searchlight.js';})();");
 
-  $(document).on('input', '#light', function() {
-    var light = $(this).val();
+  $(document).on('input', '#light, #timer', function() {
+    var light = $('#light').val();
     var timer = $('#timer').val();
-
-    console.log("brightness changed to " + String(light));
-    console.log("timer set to " + String(timer));
+    console.log("light: " + String(light) + "\t timer: " + String(timer));
 
     if (light == 1 && timer == 1) {
-      $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-light1-timer1.js';})();");
-      console.log("lowest brightness loaded");
+      $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-1-1.js';})();");
+      console.log("linking to searchlight-1-1.js");
+    } else if (light == 1 && timer == 2) {
+      $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-1-2.js';})();");
+      console.log("linking to searchlight-1-2.js");
     }
   });
 });
