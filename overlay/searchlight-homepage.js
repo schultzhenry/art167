@@ -29,7 +29,7 @@ $(document).ready(function() {
     console.log("brightness changed to " + String(light));
     console.log("timer set to " + String(timer));
 
-    if (light == 1) && (timer == 1) {
+    if (light == 1 && timer == 1) {
       $("#dragme").attr("href", "javascript:(function(){document.head.appendChild(document.createElement('script')).src='searchlight-light1-timer1.js';})();");
       console.log("lowest brightness loaded");
     }
