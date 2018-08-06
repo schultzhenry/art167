@@ -114,6 +114,9 @@ button:focus {
   z-index: 1000;
 }
 
+.home {
+  font-size: 4vmin;
+}
 .previous:hover, .home:hover, .next:hover {
   transition: all 0.5s;
   text-shadow: 0 0 2px black;
@@ -152,7 +155,7 @@ button:focus {
 .switch {
   position: fixed;
   display: block;
-  width: 6vmin;
+  width: 3.8vmin;
   height: 0vmin;
   z-index: 1002;
   border: 1px solid black;
@@ -172,7 +175,7 @@ button:focus {
   position: absolute;
   cursor: pointer;
   left: 0.1vmin;
-  bottom: 0;
+  bottom: -0.1vmin;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -183,7 +186,7 @@ button:focus {
   height: 1.6vmin;
   width: 1.6vmin;
   bottom: 0vmin;
-  border: 1px solid black;
+  border: 2px solid black;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 50%;
@@ -191,7 +194,7 @@ button:focus {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(3.5vmin);
-  -ms-transform: translateX(3.5vmin);
-  transform: translateX(3.5vmin);
+  -webkit-transform: translateX(1.5vmin);
+  -ms-transform: translateX(1.5vmin);
+  transform: translateX(1.5vmin);
 }
