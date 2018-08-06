@@ -8,7 +8,7 @@
 body {
   background-color: DarkSlateBlue;
   color: white;
-  font-size: 8.3vmin;
+  font-size: 8vmin;
 }
 
 #top {
@@ -48,9 +48,35 @@ a:hover {
   position: fixed;
   width: 800px;
   height: 800px;
-  background-color:red;
-  filter:blur(300px);
+  background-color:crimson;
+  filter:blur(200px);
   border-radius:50%;
   pointer-events:none;
   opacity: 0.7;
+}
+
+#links-background {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 13vmin;
+  background: crimson;
+  opacity: 0.5;
+}
+
+#links {
+  position: fixed;
+  right: 2vmin;
+  bottom: 0px;
+  width: 100vw;
+  height: 13vmin;
+  text-align: right;
+  font-size: 2.2vmin;
+  z-index: 1;
+  margin-top: 1vmin;
+}
+
+#links a {
+  z-index: 10000;
 }
