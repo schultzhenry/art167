@@ -5,6 +5,7 @@ body {
 
 img:not(#instructions) {
   border: 1px solid black;
+  filter: invert(100%) grayscale(100%);
   visibility: hidden;
   position: absolute;
   bottom: 110vh;
